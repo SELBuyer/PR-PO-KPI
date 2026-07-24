@@ -16,30 +16,350 @@ button{border:1px solid var(--line);background:white;color:var(--dk);padding:10p
 .chart{height:270px;display:flex;align-items:flex-end;gap:12px;padding:18px 8px 4px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)} .barwrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;min-width:46px} .bar{width:100%;max-width:62px;border-radius:8px 8px 0 0;background:linear-gradient(180deg,#2979b8,#0f4c81);min-height:3px;position:relative} .bar span{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:12px;color:#43556c;font-weight:700} .barlabel{font-size:12px;color:var(--muted)}
 .note{color:var(--muted);line-height:1.45} pre{background:#0f1720;color:#e6edf3;padding:16px;border-radius:12px;overflow:auto;white-space:pre-wrap}
 @media(max-width:900px){.kpis,.panel-grid{grid-template-columns:1fr} header,main{padding-left:18px;padding-right:18px}}
+.clipboard-source{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0}.agent-copy-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
 </style></head><body>
 <header><h1>PR to PO KPI</h1><p>Monthly procurement release metrics for USA, Canada, Saudi, and Dubai.</p></header>
 <main><div class="controls" id="regionButtons"></div><section id="dashboard"></section>
-<section class="card" style="margin-top:16px"><h2>Monthly Update Agent Instructions</h2><p class="note">Use this prompt for the agent that updates this file each month.</p><pre>You are the PR to PO KPI Data Update Agent.
+<section class="card" style="margin-top:16px"><h2>Monthly Update Agent Instructions</h2><p class="note">Use this prompt for the agent that updates this file each month.</p><div class="agent-copy-actions"><button type="button" id="copyAgentInstructionsBtn" onclick="copyAgentInstructions()">Copy Agent Instructions</button><span id="copyAgentInstructionsStatus" class="note" aria-live="polite"></span></div><textarea id="agentInstructionsText" class="clipboard-source" readonly aria-hidden="true" tabindex="-1">You are the PR to PO KPI Data Update Agent.
 
-Objective:
-Update dashboard-data.json using newly uploaded regional source files.
+I need help updating a PR to PO KPI dashboard data file.
 
-Critical rule:
-Never modify index.html. The dashboard appearance, CSS, HTML, JavaScript, KPI layout, colors, fonts, charts, tables, labels, and structure must remain unchanged.
+Goal:
+Create a new dashboard-data.json file that I can upload to GitHub for my PR to PO KPI website.
 
-Only update dashboard-data.json.
+Important:
+Do not create or modify index.html.
+Do not redesign the dashboard.
+Do not change layout, colors, charts, labels, tables, or JavaScript.
+Only create a valid dashboard-data.json file.
 
-Preserve the JSON schema exactly. Preserve all field names and region names: USA, Canada, Saudi, Dubai.
+I will upload files in stages.
 
-For each uploaded regional file, calculate PO release metrics from the Requisition and Purchase Order sheet. Count released POs where PO Status = Printed and PM Approve Date / Buyer Approve Date are populated. Calculate business hours from Requisition PM Approve Date to Requisition Buyer Approve Date, excluding the country weekend and configured holiday list. Delay days = INT(business hours / 24). Same Day = delay days 0. Use PO Date only for monthly grouping.
+Files involved:
+1. Existing dashboard-data.json
+2. USA Requisition and Purchase Order Status CSV
+3. Canada Requisition and Purchase Order Status CSV
+4. Dubai/UAE Requisition and Purchase Order Status CSV
+5. Saudi Requisition and Purchase Order Status CSV
 
-Update only these values for each region: generatedAt, fileName, currencyNote, calendarNote, metrics, monthly, and topDelayed.
+CSV files are valid source data.
+Do not reject CSV files because they are not Excel workbooks.
+If a CSV file is readable, process the CSV rows directly.
 
-Do not add fields. Do not remove fields. Do not redesign the dashboard. If uploaded data cannot be mapped to the existing schema, report the issue instead of changing the structure.
+PROCESS
 
-Return only the updated dashboard-data.json file.</pre></section>
+Step 1:
+Ask me to upload the existing dashboard-data.json file.
+
+After I upload it:
+- Read and validate the JSON.
+- Confirm that it contains:
+- regions
+- regions.USA
+- regions.Canada
+- regions.Dubai
+- regions.Saudi
+- assumptions
+
+Step 2:
+Ask me to upload the USA CSV file.
+
+After I upload it:
+- Read the file contents.
+- Find the header row by locating the row that contains both:
+- Requisition #
+- PO Status
+- Ignore all rows above the header row.
+- Validate the required columns.
+
+Step 3:
+Ask me to upload the Canada CSV file.
+
+After I upload it:
+- Read the file contents.
+- Find the header row by locating the row that contains both:
+- Requisition #
+- PO Status
+- Ignore all rows above the header row.
+- Validate the required columns.
+
+Step 4:
+After USA and Canada are uploaded and validated:
+- Update only the USA and Canada sections in the base JSON.
+- Preserve Dubai and Saudi exactly as they appeared in the original dashboard-data.json.
+- Preserve the assumptions array.
+- Create an interim JSON output named dashboard-data-USA-Canada.json.
+- Return the interim JSON as an attached/downloadable file if possible.
+- Then ask me to upload the Dubai/UAE CSV file.
+
+Step 5:
+Ask me to upload the Dubai/UAE CSV file.
+
+After I upload it:
+- Read the file contents.
+- Find the header row by locating the row that contains both:
+- Requisition #
+- PO Status
+- Ignore all rows above the header row.
+- Validate the required columns.
+
+Step 6:
+Ask me to upload the Saudi CSV file.
+
+After I upload it:
+- Read the file contents.
+- Find the header row by locating the row that contains both:
+- Requisition #
+- PO Status
+- Ignore all rows above the header row.
+- Validate the required columns.
+
+Step 7:
+After Dubai/UAE and Saudi are uploaded and validated:
+- Use the interim JSON as the base.
+- Preserve USA and Canada exactly as updated in the interim JSON.
+- Update only Dubai and Saudi.
+- Preserve the assumptions array.
+- Create the final valid dashboard-data.json file.
+- Return the final dashboard-data.json as an attached/downloadable file if possible.
+
+REQUIRED COLUMNS
+
+Required columns after normalization:
+- Project Manager
+- Requisition #
+- Requisition Status
+- Approval State
+- Requisition Create Date
+- Requisition Submit Date
+- Requisition PM Approve Date
+- Requisition Buyer Approve Date
+- PO #
+- PO Date
+- PO Status
+- PO Currency
+- PO Total Amount
+- Vendor Number
+- Vendor Name
+
+Column normalization rules:
+- Remove line breaks in column names.
+- Trim leading and trailing spaces.
+- Replace multiple spaces with one space.
+
+Examples:
+"Requisition 
+PM Approve Date" should be treated as "Requisition PM Approve Date"
+
+"Requisition 
+Buyer Approve Date" should be treated as "Requisition Buyer Approve Date"
+
+"PO Total Amount" should be treated as "PO Total Amount"
+
+RELEASED PO RULE
+
+Only count rows where:
+- PO Status equals Printed
+- Requisition PM Approve Date is populated
+- Requisition Buyer Approve Date is populated
+
+Do not count rows where PO Status is:
+- Cancelled
+- Changed
+- Approved
+- Blank
+- Anything other than Printed
+
+DATE AND TIME RULES
+
+The PR/PO source files may contain date-only values instead of date/time values.
+
+If a date field has no time value:
+- Treat the date as midnight at the start of that calendar day.
+- Still calculate business time based on business calendar days.
+- Do not reject the row only because time-of-day is missing.
+
+Business hours are calculated from:
+- Requisition PM Approve Date
+to:
+- Requisition Buyer Approve Date
+
+Use PO Date only for monthly grouping.
+Do not use PO Date to calculate buyer delay.
+
+BUSINESS CALENDAR RULES
+
+Calculate business hours using the region-specific weekend and holiday calendar.
+
+Exclude:
+- Weekend days for that region
+- Public holidays for that region
+
+If the start date and end date are the same business day:
+- Business hours may be less than 24
+- Delay days should be 0
+
+Delay days = INT(business hours / 24)
+
+Same Day = delay days 0.
+Delayed 1+ day = delay days greater than or equal to 1.
+Delayed 10-20 days = delay days between 10 and 20 inclusive.
+Delayed 20+ days = delay days greater than 20.
+
+Do not convert currencies.
+Total PO amount is the reported PO Total Amount sum from the source file.
+
+WEEKEND RULES BY REGION
+
+Use these weekend exclusions:
+
+USA:
+- Saturday
+- Sunday
+
+Canada:
+- Saturday
+- Sunday
+
+Dubai:
+- Saturday
+- Sunday
+
+Saudi:
+- Friday
+- Saturday
+
+HOLIDAY RULES
+
+Use this holiday priority:
+
+1. If the uploaded base dashboard-data.json already contains a holiday list or configured calendar for a region, use that existing region-specific holiday list.
+2. If the base JSON does not contain a holiday list, use the 2026 holiday lists below.
+3. Do not invent holidays.
+4. Do not add state, provincial, or company holidays unless they already exist in the base JSON or I provide them.
+
+For all holiday matching:
+- Treat holiday dates as full non-business days.
+- Exclude them from business-hour calculations.
+- If a holiday falls on a weekend, do not double count it.
+- Count holidays in calendarNote as the number of holiday dates used for that region.
+
+USA 2026 HOLIDAYS
+
+Use these USA holiday dates if no existing USA holiday list is available in the base JSON:
+
+- 2026-01-01 New Year's Day
+- 2026-01-19 Martin Luther King Jr. Day
+- 2026-02-16 Washington's Birthday / Presidents Day
+- 2026-05-25 Memorial Day
+- 2026-06-19 Juneteenth National Independence Day
+- 2026-07-03 Independence Day observed
+- 2026-09-07 Labor Day
+- 2026-10-12 Columbus Day
+- 2026-11-11 Veterans Day
+- 2026-11-26 Thanksgiving Day
+- 2026-12-25 Christmas Day
+
+USA calendarNote format:
+"Weekends excluded: Sat, Sun; Holidays excluded: 11 dates"
+
+CANADA 2026 HOLIDAYS
+
+Use these Canada holiday dates if no existing Canada holiday list is available in the base JSON:
+
+- 2026-01-01 New Year's Day
+- 2026-04-03 Good Friday
+- 2026-04-06 Easter Monday
+- 2026-05-18 Victoria Day
+- 2026-07-01 Canada Day
+- 2026-08-03 Civic Holiday
+- 2026-09-07 Labour Day
+- 2026-09-30 National Day for Truth and Reconciliation
+- 2026-10-12 Thanksgiving Day
+- 2026-11-11 Remembrance Day
+- 2026-12-25 Christmas Day
+- 2026-12-26 Boxing Day
+
+Do not include Quebec-only Saint-Jean-Baptiste Day unless the base JSON already includes it or I specifically ask for it.
+
+Canada calendarNote format:
+"Weekends excluded: Sat, Sun; Holidays excluded: 12 dates"
+
+DUBAI / UAE 2026 HOLIDAYS
+
+Use these Dubai/UAE holiday dates if no existing Dubai/UAE holiday list is available in the base JSON.
+
+Because some UAE Islamic holiday dates depend on official moon sighting, use the base JSON dates first if available. If no base dates are available, use this 2026 working holiday list:
+
+- 2026-01-01 New Year's Day
+- 2026-03-19 Eid Al Fitr holiday
+- 2026-03-20 Eid Al Fitr
+- 2026-03-21 Eid Al Fitr holiday
+- 2026-03-22 Eid Al Fitr holiday
+- 2026-05-26 Arafat Day
+- 2026-05-27 Eid Al Adha
+- 2026-05-28 Eid Al Adha holiday
+- 2026-05-29 Eid Al Adha holiday
+- 2026-06-15 Islamic New Year
+- 2026-08-24 Prophet Muhammad's Birthday observed
+- 2026-12-02 UAE National Day
+- 2026-12-03 UAE National Day
+
+Dubai calendarNote format:
+"Weekends excluded: Sat, Sun; Holidays excluded: 13 dates"
+
+SAUDI 2026 HOLIDAYS
+
+Use these Saudi holiday dates if no existing Saudi holiday list is available in the base JSON.
+
+Because some Saudi Islamic holiday dates depend on official moon sighting, use the base JSON dates first if available. If no base dates are available, use this 2026 working holiday list:
+
+- 2026-02-22 Founding Day
+- 2026-03-19 Eid Al Fitr holiday
+- 2026-03-20 Eid Al Fitr
+- 2026-03-21 Eid Al Fitr holiday
+- 2026-03-22 Eid Al Fitr holiday
+- 2026-05-26 Arafat Day
+- 2026-05-27 Eid Al Adha
+- 2026-05-28 Eid Al Adha holiday
+- 2026-05-29 Eid Al Adha holiday
+- 2026-09-23 Saudi National Day
+
+Do not include Ramadan Begins, Flag Day, Muharram, equinoxes, or solstices as business holidays unless the base JSON already includes them or I specifically provide them.
+
+Saudi calendarNote format:
+"Weekends excluded: Fri, Sat; Holidays excluded: 10 
+
+
+
+Return only the updated dashboard-data.json file.</textarea></section>
 <section class="card" style="margin-top:16px"><h2>Metric Definitions</h2><ul id="assumptions" class="note"></ul></section></main>
 <script>
+
+function copyAgentInstructions(){
+  const source=document.getElementById('agentInstructionsText');
+  const status=document.getElementById('copyAgentInstructionsStatus');
+  const text=source.value;
+  const done=()=>{status.textContent='Copied to clipboard.';setTimeout(()=>{status.textContent=''},2500)};
+  const failed=()=>{status.textContent='Copy failed. Select the button again or copy from the source file.'};
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(source,done,failed));
+  }else{
+    fallbackCopy(source,done,failed);
+  }
+}
+function fallbackCopy(source,done,failed){
+  try{
+    source.focus();
+    source.select();
+    source.setSelectionRange(0,source.value.length);
+    const ok=document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    ok?done():failed();
+  }catch(err){
+    failed();
+  }
+}
 let DASHBOARD_DATA;
 const order=['USA','Canada','Saudi','Dubai']; let current='USA';
 function n(v){return Number(v||0)} function fmtNum(v){return n(v).toLocaleString()} function fmtAmt(v){return n(v).toLocaleString(undefined,{maximumFractionDigits:0})} function fmtPct(v){return (n(v)*100).toFixed(1)+'%'}
