@@ -2,29 +2,29 @@
   "regions": {
     "USA": {
       "fileName": "Requisition and Purchase Order Status - USA.xlsx",
-      "generatedAt": "2026-07-24 16:34",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 1667",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 11 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
       "metrics": {
         "released": 1667,
-        "sameDay": 1665,
-        "sameDayPct": 0.9988002399520096,
-        "delayed1": 2,
-        "delayed1Pct": 0.0011997600479904018,
+        "sameDay": 1662,
+        "sameDayPct": 0.997000599880024,
+        "delayed1": 5,
+        "delayed1Pct": 0.002999400119976005,
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 77954397.96,
-        "avgHours": 1.8386082783443312,
-        "medianHours": 0.56,
-        "p90Hours": 3.406
+        "avgHours": 1.8852294524428448,
+        "medianHours": 0.5634555555555556,
+        "p90Hours": 3.4016366666666666
       },
       "monthly": [
         {
           "key": "2026-01",
           "month": "January",
           "released": 232,
-          "same_day": 232,
-          "delayed_1": 0,
+          "same_day": 230,
+          "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
           "amount": 5169194.58
@@ -83,8 +83,8 @@
           "key": "2026-07",
           "month": "July",
           "released": 219,
-          "same_day": 218,
-          "delayed_1": 1,
+          "same_day": 217,
+          "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
           "amount": 7684406.769999999
@@ -102,6 +102,36 @@
           "currency": "USD"
         },
         {
+          "req": "27865",
+          "po": "ES27865",
+          "vendor": "ABB Inc",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.82,
+          "amount": 4765.5,
+          "currency": "USD"
+        },
+        {
+          "req": "27866",
+          "po": "ES27866",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.69,
+          "amount": 48517.78,
+          "currency": "USD"
+        },
+        {
+          "req": "29714",
+          "po": "ES29714",
+          "vendor": "TD Synnex Corporation",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.66,
+          "amount": 1219.43,
+          "currency": "USD"
+        },
+        {
           "req": "28906",
           "po": "ES28906",
           "vendor": "Schweitzer Engineering Laboratories, Inc.",
@@ -115,9 +145,9 @@
     },
     "Canada": {
       "fileName": "Requisition and Purchase Order Status - CA.xlsx",
-      "generatedAt": "2026-07-24 16:34",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 34, CAD: 8",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 12 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
       "metrics": {
         "released": 42,
         "sameDay": 41,
@@ -127,9 +157,9 @@
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 1172497.2,
-        "avgHours": 3.454285714285714,
-        "medianHours": 0.78,
-        "p90Hours": 16.997
+        "avgHours": 3.4543292658730156,
+        "medianHours": 0.7814994444444444,
+        "p90Hours": 14.556084083333324
       },
       "monthly": [
         {
@@ -218,9 +248,9 @@
     },
     "Saudi": {
       "fileName": "Requisition and Purchase Order Status - Saudi.xlsx",
-      "generatedAt": "2026-07-24 16:34",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 128, SAR: 88, AED: 15, EUR: 11, GBP: 2",
-      "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 10 dates",
+      "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 0 dates",
       "metrics": {
         "released": 244,
         "sameDay": 168,
@@ -230,9 +260,9 @@
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 21305327.4,
-        "avgHours": 21.819795081967214,
-        "medianHours": 18.73,
-        "p90Hours": 48.809999999999995
+        "avgHours": 21.819794052823315,
+        "medianHours": 18.726591111111112,
+        "p90Hours": 48.57146225000001
       },
       "monthly": [
         {
@@ -348,16 +378,6 @@
           "currency": "USD"
         },
         {
-          "req": "5552",
-          "po": "ESSAU5552",
-          "vendor": "SEL Middle East BSC",
-          "manager": "Rajkumar Raju",
-          "delay": 3,
-          "hours": 83.89,
-          "amount": 31147.2,
-          "currency": "USD"
-        },
-        {
           "req": "5551",
           "po": "ESSAU5551A",
           "vendor": "SEL Middle East BSC",
@@ -365,6 +385,16 @@
           "delay": 3,
           "hours": 84.78,
           "amount": 23360.4,
+          "currency": "USD"
+        },
+        {
+          "req": "5552",
+          "po": "ESSAU5552",
+          "vendor": "SEL Middle East BSC",
+          "manager": "Rajkumar Raju",
+          "delay": 3,
+          "hours": 83.89,
+          "amount": 31147.2,
           "currency": "USD"
         },
         {
@@ -378,6 +408,16 @@
           "currency": "USD"
         },
         {
+          "req": "5693",
+          "po": "ESSAU5693A",
+          "vendor": "COMLAB FOR INFORMATION TECHNOLOGY",
+          "manager": "Mazen Bokhari",
+          "delay": 2,
+          "hours": 71.74,
+          "amount": 4410.0,
+          "currency": "SAR"
+        },
+        {
           "req": "5700",
           "po": "ESSAU5700",
           "vendor": "HILAL COMPUTER TECHNICAL FOR TRADE CO.",
@@ -388,32 +428,22 @@
           "currency": "SAR"
         },
         {
-          "req": "5694",
-          "po": "ESSAU5694",
-          "vendor": "COMLAB FOR INFORMATION TECHNOLOGY",
-          "manager": "Mohammed AlMutawa",
+          "req": "5656",
+          "po": "ESSAU5656",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Afrose Mohammad",
           "delay": 2,
-          "hours": 52.26,
-          "amount": 37950.0,
-          "currency": "SAR"
-        },
-        {
-          "req": "5694",
-          "po": "ESSAU5694A",
-          "vendor": "COMLAB FOR INFORMATION TECHNOLOGY",
-          "manager": "Mohammed AlMutawa",
-          "delay": 2,
-          "hours": 52.26,
-          "amount": 33000.0,
-          "currency": "SAR"
+          "hours": 68.53,
+          "amount": 35069.01,
+          "currency": "USD"
         }
       ]
     },
     "Dubai": {
       "fileName": "Requisition and Purchase Order Status - UAE.xlsx",
-      "generatedAt": "2026-07-24 16:34",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "AED: 121, USD: 108, EUR: 17, GBP: 5, OMR: 3",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 13 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
       "metrics": {
         "released": 254,
         "sameDay": 188,
@@ -423,9 +453,9 @@
         "delayed10_20": 3,
         "delayed20": 2,
         "totalAmount": 7954535.12,
-        "avgHours": 27.53267716535433,
-        "medianHours": 6.76,
-        "p90Hours": 49.425
+        "avgHours": 27.533279690507438,
+        "medianHours": 6.757082361111111,
+        "p90Hours": 49.11555141666667
       },
       "monthly": [
         {
@@ -591,14 +621,14 @@
           "currency": "USD"
         },
         {
-          "req": "3817",
-          "po": "ESARE3817",
-          "vendor": "Aptec Distribution FZ-LLC",
-          "manager": "Prasanth Sankar",
+          "req": "3814",
+          "po": "ESARE3814",
+          "vendor": "World of Technology for Connectivity",
+          "manager": "Karthikeyan Lakshmanan",
           "delay": 3,
-          "hours": 91.0,
-          "amount": 1267.76,
-          "currency": "USD"
+          "hours": 94.29,
+          "amount": 1095.0,
+          "currency": "AED"
         }
       ]
     }
