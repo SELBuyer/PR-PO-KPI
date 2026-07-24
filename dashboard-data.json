@@ -2,20 +2,20 @@
   "regions": {
     "USA": {
       "fileName": "Requisition and Purchase Order Status - USA.xlsx",
-      "generatedAt": "2026-07-24 13:42",
+      "generatedAt": "2026-07-24 14:18",
       "currencyNote": "USD: 1667",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 11 dates",
       "metrics": {
         "released": 1667,
-        "sameDay": 1662,
-        "sameDayPct": 0.997000599880024,
-        "delayed1": 5,
-        "delayed1Pct": 0.002999400119976005,
+        "sameDay": 1665,
+        "sameDayPct": 0.9988002399520096,
+        "delayed1": 2,
+        "delayed1Pct": 0.0011997600479904018,
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 77954397.96,
-        "avgHours": 1.8852294524428448,
-        "medianHours": 0.5634555555555556,
+        "avgHours": 1.8387147668799573,
+        "medianHours": 0.5600519444444444,
         "p90Hours": 3.4016366666666666
       },
       "monthly": [
@@ -23,8 +23,8 @@
           "key": "2026-01",
           "month": "January",
           "released": 232,
-          "same_day": 230,
-          "delayed_1": 2,
+          "same_day": 232,
+          "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
           "amount": 5169194.58
@@ -57,7 +57,7 @@
           "delayed_1": 1,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 6859800.140000001
+          "amount": 6859800.14
         },
         {
           "key": "2026-05",
@@ -67,7 +67,7 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 17953984.980000008
+          "amount": 17953984.98
         },
         {
           "key": "2026-06",
@@ -77,17 +77,17 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 20864285.440000016
+          "amount": 20864285.44
         },
         {
           "key": "2026-07",
           "month": "July",
           "released": 219,
-          "same_day": 217,
-          "delayed_1": 2,
+          "same_day": 218,
+          "delayed_1": 1,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 7684406.769999999
+          "amount": 7684406.77
         }
       ],
       "topDelayed": [
@@ -102,36 +102,6 @@
           "currency": "USD"
         },
         {
-          "req": "27865",
-          "po": "ES27865",
-          "vendor": "ABB Inc",
-          "manager": "Mio Edwards",
-          "delay": 1,
-          "hours": 38.82,
-          "amount": 4765.5,
-          "currency": "USD"
-        },
-        {
-          "req": "27866",
-          "po": "ES27866",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Mio Edwards",
-          "delay": 1,
-          "hours": 38.69,
-          "amount": 48517.78,
-          "currency": "USD"
-        },
-        {
-          "req": "29714",
-          "po": "ES29714",
-          "vendor": "TD Synnex Corporation",
-          "manager": "Mio Edwards",
-          "delay": 1,
-          "hours": 38.66,
-          "amount": 1219.43,
-          "currency": "USD"
-        },
-        {
           "req": "28906",
           "po": "ES28906",
           "vendor": "Schweitzer Engineering Laboratories, Inc.",
@@ -140,14 +110,94 @@
           "hours": 26.0,
           "amount": 1560.53,
           "currency": "USD"
+        },
+        {
+          "req": "28860",
+          "po": "ES28860",
+          "vendor": "Panel Built, Inc.",
+          "manager": "Kirk Gould",
+          "delay": 0,
+          "hours": 21.42,
+          "amount": 1587885.0,
+          "currency": "USD"
+        },
+        {
+          "req": "29875",
+          "po": "ES29875",
+          "vendor": "ABB Inc",
+          "manager": "King Lumu",
+          "delay": 0,
+          "hours": 20.85,
+          "amount": 12093.3,
+          "currency": "USD"
+        },
+        {
+          "req": "28295",
+          "po": "ES28295",
+          "vendor": "SEL INC - Enclosures",
+          "manager": "Miguel Vera",
+          "delay": 0,
+          "hours": 20.65,
+          "amount": 645.0,
+          "currency": "USD"
+        },
+        {
+          "req": "27928",
+          "po": "ES27928",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Alex Langseth",
+          "delay": 0,
+          "hours": 19.73,
+          "amount": 14128.0,
+          "currency": "USD"
+        },
+        {
+          "req": "29618",
+          "po": "ES29618",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Dhrushant Patel",
+          "delay": 0,
+          "hours": 19.35,
+          "amount": 9978.24,
+          "currency": "USD"
+        },
+        {
+          "req": "29620",
+          "po": "ES29620",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Dhrushant Patel",
+          "delay": 0,
+          "hours": 19.32,
+          "amount": 9978.24,
+          "currency": "USD"
+        },
+        {
+          "req": "28647",
+          "po": "ES28647",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Alexandra Tomoche",
+          "delay": 0,
+          "hours": 18.24,
+          "amount": 37.5,
+          "currency": "USD"
+        },
+        {
+          "req": "28037",
+          "po": "ES28037",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Mio Edwards",
+          "delay": 0,
+          "hours": 17.87,
+          "amount": 6674.62,
+          "currency": "USD"
         }
       ]
     },
     "Canada": {
       "fileName": "Requisition and Purchase Order Status - CA.xlsx",
-      "generatedAt": "2026-07-24 13:42",
+      "generatedAt": "2026-07-24 14:18",
       "currencyNote": "USD: 34, CAD: 8",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 12 dates",
       "metrics": {
         "released": 42,
         "sameDay": 41,
@@ -157,7 +207,7 @@
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 1172497.2,
-        "avgHours": 3.4543292658730156,
+        "avgHours": 3.454329265873016,
         "medianHours": 0.7814994444444444,
         "p90Hours": 14.556084083333324
       },
@@ -243,14 +293,104 @@
           "hours": 25.47,
           "amount": 22513.31,
           "currency": "USD"
+        },
+        {
+          "req": "2186",
+          "po": "ESCA2186",
+          "vendor": "SEL INC - Enclosures",
+          "manager": "Umer Khan",
+          "delay": 0,
+          "hours": 23.18,
+          "amount": 246813.0,
+          "currency": "USD"
+        },
+        {
+          "req": "2172",
+          "po": "ESCA2172",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Umer Khan",
+          "delay": 0,
+          "hours": 22.92,
+          "amount": 30794.54,
+          "currency": "USD"
+        },
+        {
+          "req": "2213",
+          "po": "ESCA2213",
+          "vendor": "KELTOUR CONTROLS INC",
+          "manager": "Sara Fatima",
+          "delay": 0,
+          "hours": 17.78,
+          "amount": 11498.38,
+          "currency": "CAD"
+        },
+        {
+          "req": "2197",
+          "po": "ESCA2197",
+          "vendor": "CDW DIRECT LLC",
+          "manager": "Satya Sekhar Kavala",
+          "delay": 0,
+          "hours": 15.17,
+          "amount": 1641.63,
+          "currency": "CAD"
+        },
+        {
+          "req": "2187",
+          "po": "ESCA2187",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Monika Mehta",
+          "delay": 0,
+          "hours": 9.05,
+          "amount": 16715.64,
+          "currency": "USD"
+        },
+        {
+          "req": "2168",
+          "po": "ESCA2166A",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Umer Khan",
+          "delay": 0,
+          "hours": 3.73,
+          "amount": 39.65,
+          "currency": "USD"
+        },
+        {
+          "req": "2180",
+          "po": "ESCA2180",
+          "vendor": "INTERCONNECT SALES INC",
+          "manager": "Satya Sekhar Kavala",
+          "delay": 0,
+          "hours": 2.11,
+          "amount": 63.0,
+          "currency": "USD"
+        },
+        {
+          "req": "2205",
+          "po": "ESCA2205",
+          "vendor": "SEL INC - Enclosures",
+          "manager": "Umer Khan",
+          "delay": 0,
+          "hours": 1.91,
+          "amount": 56260.0,
+          "currency": "USD"
+        },
+        {
+          "req": "2207",
+          "po": "ESCA2207",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Sara Fatima",
+          "delay": 0,
+          "hours": 1.88,
+          "amount": 8319.28,
+          "currency": "USD"
         }
       ]
     },
     "Saudi": {
       "fileName": "Requisition and Purchase Order Status - Saudi.xlsx",
-      "generatedAt": "2026-07-24 13:42",
+      "generatedAt": "2026-07-24 14:18",
       "currencyNote": "USD: 128, SAR: 88, AED: 15, EUR: 11, GBP: 2",
-      "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 0 dates",
+      "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 10 dates",
       "metrics": {
         "released": 244,
         "sameDay": 168,
@@ -303,7 +443,7 @@
           "delayed_1": 12,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1852660.2799999998
+          "amount": 1852660.28
         },
         {
           "key": "2026-05",
@@ -313,7 +453,7 @@
           "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1500433.6199999992
+          "amount": 1500433.62
         },
         {
           "key": "2026-06",
@@ -323,7 +463,7 @@
           "delayed_1": 38,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 6992010.549999999
+          "amount": 6992010.55
         },
         {
           "key": "2026-07",
@@ -441,9 +581,9 @@
     },
     "Dubai": {
       "fileName": "Requisition and Purchase Order Status - UAE.xlsx",
-      "generatedAt": "2026-07-24 13:42",
+      "generatedAt": "2026-07-24 14:18",
       "currencyNote": "AED: 121, USD: 108, EUR: 17, GBP: 5, OMR: 3",
-      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
+      "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 13 dates",
       "metrics": {
         "released": 254,
         "sameDay": 188,
@@ -453,7 +593,7 @@
         "delayed10_20": 3,
         "delayed20": 2,
         "totalAmount": 7954535.12,
-        "avgHours": 27.533279690507438,
+        "avgHours": 27.532509736439195,
         "medianHours": 6.757082361111111,
         "p90Hours": 49.11555141666667
       },
@@ -466,7 +606,7 @@
           "delayed_1": 5,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 2909410.4299999997
+          "amount": 2909410.43
         },
         {
           "key": "2026-02",
@@ -476,7 +616,7 @@
           "delayed_1": 13,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 339166.98000000004
+          "amount": 339166.98
         },
         {
           "key": "2026-03",
@@ -496,7 +636,7 @@
           "delayed_1": 16,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 289289.18999999994
+          "amount": 289289.19
         },
         {
           "key": "2026-05",
@@ -506,7 +646,7 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 601597.8700000001
+          "amount": 601597.87
         },
         {
           "key": "2026-06",
@@ -516,7 +656,7 @@
           "delayed_1": 5,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1745173.9200000004
+          "amount": 1745173.92
         },
         {
           "key": "2026-07",
