@@ -37,8 +37,23 @@ Important:
 - Do not create or modify index.html.
 - Do not redesign the dashboard.
 - Do not change layout, colors, charts, labels, tables, or JavaScript.
-- Only create a valid dashboard-data.json file.
-- Preserve the existing JSON structure and update the values needed by the dashboard.
+- Only create a valid updated dashboard-data.json file.
+- Preserve the existing JSON structure and update only the values needed by the dashboard.
+
+File upload process:
+Ask me for each required file one at a time.
+
+Start by asking me to upload the existing dashboard-data.json file first.
+
+After I upload dashboard-data.json, review its structure and then ask me for the source files one at a time in this order:
+1. USA Requisition and Purchase Order Status source file
+2. Canada Requisition and Purchase Order Status source file
+3. Dubai/UAE Requisition and Purchase Order Status source file
+4. Saudi Requisition and Purchase Order Status source file
+
+Do not ask for all files at once.
+Do not begin calculations until all required files have been uploaded.
+After each file is uploaded, confirm that it was received and then ask for the next file.
 
 Required source files:
 1. Existing dashboard-data.json
@@ -105,6 +120,9 @@ Holiday rules:
 Amounts:
 - Do not convert currencies.
 - totalAmount is the reported PO Total Amount sum from the source file.
+
+Final output:
+Return only the updated dashboard-data.json file.
 
 Final output:
 Return only the updated dashboard-data.json file.</textarea></section>
