@@ -129,52 +129,144 @@
         {
           "req": "29772",
           "po": "ES29772",
+          "poDate": "2026-07-13",
+          "pmApproveDate": "2026-07-09",
+          "buyerApproveDate": "2026-07-13",
           "vendor": "SEL MEXICO",
           "manager": "Dilichi Okekearu",
           "delay": 2,
           "hours": 50.22,
           "amount": 366112.0,
-          "currency": "USD"
+          "currency": "USD",
+          "status": "Printed"
         },
         {
           "req": "27865",
           "po": "ES27865",
+          "poDate": "2026-01-20",
+          "pmApproveDate": "2026-01-17",
+          "buyerApproveDate": "2026-01-20",
           "vendor": "ABB Inc",
           "manager": "Mio Edwards",
           "delay": 1,
           "hours": 38.82,
           "amount": 4765.5,
-          "currency": "USD"
+          "currency": "USD",
+          "status": "Printed"
         },
         {
           "req": "27866",
           "po": "ES27866",
+          "poDate": "2026-01-20",
+          "pmApproveDate": "2026-01-17",
+          "buyerApproveDate": "2026-01-20",
           "vendor": "Schweitzer Engineering Laboratories, Inc.",
           "manager": "Mio Edwards",
           "delay": 1,
           "hours": 38.69,
           "amount": 48517.78,
-          "currency": "USD"
+          "currency": "USD",
+          "status": "Printed"
         },
         {
           "req": "29714",
           "po": "ES29714",
+          "poDate": "2026-07-06",
+          "pmApproveDate": "2026-07-02",
+          "buyerApproveDate": "2026-07-06",
           "vendor": "TD Synnex Corporation",
           "manager": "Mio Edwards",
           "delay": 1,
           "hours": 38.66,
           "amount": 1219.43,
-          "currency": "USD"
+          "currency": "USD",
+          "status": "Printed"
         },
         {
           "req": "28906",
           "po": "ES28906",
+          "poDate": "2026-04-30",
+          "pmApproveDate": "2026-04-29",
+          "buyerApproveDate": "2026-04-30",
           "vendor": "Schweitzer Engineering Laboratories, Inc.",
           "manager": "Miguel Vera",
           "delay": 1,
           "hours": 26.0,
           "amount": 1560.53,
-          "currency": "USD"
+          "currency": "USD",
+          "status": "Printed"
+        }
+      ],
+      "allDelayed": [
+        {
+          "req": "29772",
+          "po": "ES29772",
+          "poDate": "2026-07-13",
+          "pmApproveDate": "2026-07-09",
+          "buyerApproveDate": "2026-07-13",
+          "vendor": "SEL MEXICO",
+          "manager": "Dilichi Okekearu",
+          "delay": 2,
+          "hours": 50.22,
+          "amount": 366112.0,
+          "currency": "USD",
+          "status": "Printed"
+        },
+        {
+          "req": "27865",
+          "po": "ES27865",
+          "poDate": "2026-01-20",
+          "pmApproveDate": "2026-01-17",
+          "buyerApproveDate": "2026-01-20",
+          "vendor": "ABB Inc",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.82,
+          "amount": 4765.5,
+          "currency": "USD",
+          "status": "Printed"
+        },
+        {
+          "req": "27866",
+          "po": "ES27866",
+          "poDate": "2026-01-20",
+          "pmApproveDate": "2026-01-17",
+          "buyerApproveDate": "2026-01-20",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.69,
+          "amount": 48517.78,
+          "currency": "USD",
+          "status": "Printed"
+        },
+        {
+          "req": "29714",
+          "po": "ES29714",
+          "poDate": "2026-07-06",
+          "pmApproveDate": "2026-07-02",
+          "buyerApproveDate": "2026-07-06",
+          "vendor": "TD Synnex Corporation",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.66,
+          "amount": 1219.43,
+          "currency": "USD",
+          "status": "Printed"
+        },
+        {
+          "req": "28906",
+          "po": "ES28906",
+          "poDate": "2026-04-30",
+          "pmApproveDate": "2026-04-29",
+          "buyerApproveDate": "2026-04-30",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Miguel Vera",
+          "delay": 1,
+          "hours": 26.0,
+          "amount": 1560.53,
+          "currency": "USD",
+          "status": "Printed"
         }
       ]
     },
@@ -716,6 +808,7 @@
     "Business hours exclude weekends and the region-specific 2026 holiday list. Same Day means business hours are less than 24; delay days equal full 24-hour business periods.",
     "Weekend rules used: USA/Canada/Dubai exclude Saturday and Sunday; Saudi excludes Friday and Saturday.",
     "PO amount totals are reported-value sums from the source files and are not converted between currencies.",
-    "USA PR total counts source rows where PO # is populated, regardless of PO Status. Average per day equals PR total divided by total business days shown in the monthly trend."
+    "USA PR total counts source rows where PO # is populated, regardless of PO Status. Average per day equals PR total divided by total business days shown in the monthly trend.",
+    "The delayed PO detail section lists Printed POs with a buyer approval delay of 1 or more business days, calculated from Requisition PM Approve Date to Requisition Buyer Approve Date."
   ]
 }
