@@ -10,7 +10,15 @@ header{max-width:1280px;margin:0 auto;padding:28px 30px 16px;position:relative} 
 main{max-width:1280px;margin:auto;padding:0 30px 38px;position:relative} .controls{display:flex;gap:8px;margin-bottom:14px;align-items:center;flex-wrap:wrap} button{border:1px solid var(--line);background:rgba(9,38,69,.72);color:var(--text);padding:9px 14px;border-radius:999px;font-weight:700;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)} button.active{background:linear-gradient(135deg,var(--orange),var(--yellow));color:#06233b;border-color:rgba(255,255,255,.3)}
 .dashboard-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px} .left-stack,.right-stack{display:grid;gap:18px} .kpis{display:grid;grid-template-columns:repeat(2,minmax(150px,1fr));gap:14px} .process-kpis{display:grid;grid-template-columns:repeat(3,minmax(150px,1fr));gap:14px}
 .card{background:linear-gradient(160deg,rgba(57,131,196,.62),rgba(14,57,101,.72));border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow), inset 0 1px 0 rgba(255,255,255,.13);padding:16px;backdrop-filter:blur(8px)} .card h2{margin:0 0 12px;font-size:17px;font-weight:750;color:#f2fbff} .card h3{margin:0 0 10px;font-size:15px;color:#dff4ff}
-.kpi{min-height:118px;position:relative;overflow:hidden} .kpi:after{content:"";position:absolute;right:-30px;bottom:-35px;width:105px;height:105px;border-radius:50%;background:radial-gradient(circle,rgba(82,199,255,.22),transparent 60%)} .kpi .label{font-size:13px;color:#d7efff;margin-bottom:12px} .kpi .value{font-size:32px;font-weight:800;letter-spacing:.2px;color:#fff;text-shadow:0 4px 22px rgba(0,0,0,.2)} .kpi .sub{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.35} .good{color:var(--green)} .warn{color:var(--orange)} .bad{color:var(--red)} .badge{display:inline-block;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.2);padding:5px 10px;border-radius:999px;font-weight:800;color:#fff} .note{color:var(--muted);line-height:1.45} .sourcebar{margin-bottom:14px}
+.kpi{min-height:118px;position:relative;overflow:hidden} .kpi:after{content:"";position:absolute;right:-30px;bottom:-35px;width:105px;height:105px;border-radius:50%;background:radial-gradient(circle,rgba(82,199,255,.22),transparent 60%)} .kpi .label{font-size:13px;color:#d7efff;margin-bottom:12px} .kpi .value{font-size:32px;font-weight:800;letter-spacing:.2px;color:#fff;text-shadow:0 4px 22px rgba(0,0,0,.2)} .kpi .sub{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.35}
+.kpis .kpi:nth-child(1){background:linear-gradient(160deg,rgba(70,188,255,.78),rgba(19,89,151,.78));border-color:rgba(103,219,255,.42)} .kpis .kpi:nth-child(1):after{background:radial-gradient(circle,rgba(82,199,255,.48),transparent 62%)}
+.kpis .kpi:nth-child(2){background:linear-gradient(160deg,rgba(114,224,106,.70),rgba(18,92,112,.80));border-color:rgba(154,242,58,.44)} .kpis .kpi:nth-child(2):after{background:radial-gradient(circle,rgba(200,242,58,.45),transparent 62%)}
+.kpis .kpi:nth-child(3){background:linear-gradient(160deg,rgba(255,159,28,.72),rgba(110,73,119,.78));border-color:rgba(255,209,47,.46)} .kpis .kpi:nth-child(3):after{background:radial-gradient(circle,rgba(255,209,47,.45),transparent 62%)}
+.kpis .kpi:nth-child(4){background:linear-gradient(160deg,rgba(89,119,255,.70),rgba(22,84,137,.82));border-color:rgba(89,119,255,.46)} .kpis .kpi:nth-child(4):after{background:radial-gradient(circle,rgba(89,119,255,.45),transparent 62%)}
+.process-kpis .kpi:nth-child(1){background:linear-gradient(160deg,rgba(82,199,255,.68),rgba(13,72,125,.78));border-color:rgba(82,199,255,.40)}
+.process-kpis .kpi:nth-child(2){background:linear-gradient(160deg,rgba(255,159,28,.70),rgba(25,80,130,.78));border-color:rgba(255,159,28,.42)}
+.process-kpis .kpi:nth-child(3){background:linear-gradient(160deg,rgba(114,224,106,.66),rgba(12,67,108,.80));border-color:rgba(114,224,106,.42)}
+.kpi:before{content:"";position:absolute;left:14px;top:10px;width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.72);box-shadow:0 0 12px rgba(255,255,255,.55)} .kpi .label,.kpi .value,.kpi .sub{position:relative;z-index:1} .good{color:var(--green)} .warn{color:var(--orange)} .bad{color:var(--red)} .badge{display:inline-block;border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.2);padding:5px 10px;border-radius:999px;font-weight:800;color:#fff} .note{color:var(--muted);line-height:1.45} .sourcebar{margin-bottom:14px}
 .hero{min-height:292px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at center,rgba(44,141,220,.56),rgba(8,46,82,.76))} .gauge-wrap{position:relative;width:260px;height:260px;display:grid;place-items:center} .gauge-wrap svg{position:absolute;inset:0;transform:rotate(-90deg)} .gauge-track{fill:none;stroke:rgba(130,202,255,.2);stroke-width:18} .gauge-main{fill:none;stroke-linecap:round;stroke-width:18;filter:drop-shadow(0 0 10px rgba(114,224,106,.45))} .gauge-blue{stroke:var(--blue)} .gauge-green{stroke:var(--green)} .gauge-yellow{stroke:var(--yellow)} .gauge-center{text-align:center} .gauge-center .big{font-size:40px;font-weight:850} .gauge-center .small{color:var(--muted);font-size:16px;margin-top:6px}
 .chart{height:270px;display:flex;align-items:flex-end;gap:12px;padding:44px 10px 8px;border-left:1px solid var(--line);border-bottom:1px solid var(--line)} .barwrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;min-width:44px} .bar{width:100%;max-width:58px;border-radius:10px 10px 0 0;background:linear-gradient(180deg,var(--blue),#496dff);min-height:4px;position:relative;box-shadow:0 0 22px rgba(82,199,255,.2)} .bar span{position:absolute;top:-40px;left:50%;transform:translateX(-50%);font-size:12px;color:#fff;font-weight:800;text-align:center;line-height:1.2;white-space:nowrap} .bar span small{display:block;color:var(--muted);font-size:11px;font-weight:650} .barlabel{font-size:12px;color:var(--muted)}
 .table-scroll{overflow:auto} table{width:100%;border-collapse:collapse} th,td{padding:9px 8px;border-bottom:1px solid rgba(212,235,255,.12);font-size:13px;text-align:left;white-space:nowrap} th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#bfe6ff} td{color:#eef9ff}
@@ -32,7 +40,7 @@ Important:
 - Only create a valid dashboard-data.json file.
 - Preserve the existing JSON structure and update the values needed by the dashboard.
 
-Required files:
+Required source files:
 1. Existing dashboard-data.json
 2. USA Requisition and Purchase Order Status source file
 3. Canada Requisition and Purchase Order Status source file
@@ -41,119 +49,37 @@ Required files:
 
 Source files may be XLSX or CSV. If a CSV is readable, process the CSV rows directly.
 
-Header detection:
+Header and column rules:
 - Find the header row by locating the row that contains both Requisition # and PO Status.
 - Ignore all rows above the header row.
 - Normalize column names by removing line breaks, trimming spaces, and replacing multiple spaces with one space.
+- Required columns: Project Manager, Requisition #, Requisition Status, Approval State, Requisition Create Date, Requisition Submit Date, Requisition PM Approve Date, Requisition Buyer Approve Date, PO #, PO Date, PO Status, PO Currency, PO Total Amount, Vendor Number, Vendor Name.
 
-Required columns:
-- Project Manager
-- Requisition #
-- Requisition Status
-- Approval State
-- Requisition Create Date
-- Requisition Submit Date
-- Requisition PM Approve Date
-- Requisition Buyer Approve Date
-- PO #
-- PO Date
-- PO Status
-- PO Currency
-- PO Total Amount
-- Vendor Number
-- Vendor Name
-
-Update these dashboard-data.json fields for each updated region:
-
-region.metrics:
-- released
-- sameDay
-- sameDayPct
-- delayed1
-- delayed1Pct
-- delayed10_20
-- delayed20
-- totalAmount
-- avgHours
-- medianHours
-- p90Hours
-- totalPRRowsWithPO
-- totalPRRowsWithPOBusinessDays
-- avgPRRowsWithPOPerBusinessDay
-- monthlyPRRowsWithPOShown
-- priorYearPRRowsWithPO
-- uniqueReqsWithPO
-- uniquePOs
-- avgCreateToPmDays
-- medianCreateToPmDays
-- p90CreateToPmDays
-- avgPmToBuyerDays
-- medianPmToBuyerDays
-- p90PmToBuyerDays
-- avgCreateToBuyerDays
-- medianCreateToBuyerDays
-- p90CreateToBuyerDays
-- processTimingCount
-
-region.monthly:
-Each monthly object should include:
-- key
-- month
-- released
-- totalPRRowsWithPO
-- avgPRRowsWithPOPerBusinessDay
-- avgCreateToPmDays
-- avgPmToBuyerDays
-- avgCreateToBuyerDays
-- processTimingCount
-- avgPOsPerBusinessDay
-- businessDays
-- same_day
-- delayed_1
-- delayed_10_20
-- delayed_20
-- amount
-
-region.allDelayed:
-Include every Printed PO delayed 1 or more business days from PM approval to buyer approval.
-Each object should include:
-- req
-- po
-- poDate
-- pmApproveDate
-- buyerApproveDate
-- vendor
-- manager
-- delay
-- hours
-- amount
-- currency
-- status
-
-region.topDelayed:
-Use the top 10 allDelayed records sorted by highest delay days, then highest business hours, then PO #.
+Update these JSON fields for each updated region:
+- metrics.released, sameDay, sameDayPct, delayed1, delayed1Pct, delayed10_20, delayed20, totalAmount, avgHours, medianHours, p90Hours.
+- metrics.totalPRRowsWithPO, totalPRRowsWithPOBusinessDays, avgPRRowsWithPOPerBusinessDay, monthlyPRRowsWithPOShown, priorYearPRRowsWithPO, uniqueReqsWithPO, uniquePOs.
+- metrics.avgCreateToPmDays, medianCreateToPmDays, p90CreateToPmDays, avgPmToBuyerDays, medianPmToBuyerDays, p90PmToBuyerDays, avgCreateToBuyerDays, medianCreateToBuyerDays, p90CreateToBuyerDays, processTimingCount.
+- monthly objects should include key, month, released, totalPRRowsWithPO, avgPRRowsWithPOPerBusinessDay, avgCreateToPmDays, avgPmToBuyerDays, avgCreateToBuyerDays, processTimingCount, avgPOsPerBusinessDay, businessDays, same_day, delayed_1, delayed_10_20, delayed_20, amount.
+- allDelayed should include every Printed PO delayed 1 or more business days from PM approval to buyer approval.
+- topDelayed should include the top 10 allDelayed records sorted by highest delay days, then highest business hours, then PO #.
 
 Counting rules:
 - totalPRRowsWithPO counts source rows where PO # is populated, regardless of PO Status.
 - Do not count rows with blank PO #.
 - uniqueReqsWithPO counts distinct Requisition # values among rows with PO #.
 - uniquePOs counts distinct PO # values among rows with PO #.
-- Group monthly totalPRRowsWithPO by PO Date when PO Date is populated. If PO Date is blank, use Requisition Create Date as fallback.
+- Group monthly totalPRRowsWithPO by PO Date when populated. If PO Date is blank, use Requisition Create Date as fallback.
 - priorYearPRRowsWithPO counts rows with PO # that fall outside the displayed monthly range.
 
 Released PO rule:
-Only count released rows where:
-- PO Status equals Printed
-- Requisition PM Approve Date is populated
-- Requisition Buyer Approve Date is populated
-
-Do not count released rows where PO Status is Cancelled, Changed, Approved, In Progress, blank, or anything other than Printed.
+- Count released rows only where PO Status equals Printed and both Requisition PM Approve Date and Requisition Buyer Approve Date are populated.
+- Do not count Cancelled, Changed, Approved, In Progress, blank, or anything other than Printed as released.
 
 Delay aging:
 - Calculate from Requisition PM Approve Date to Requisition Buyer Approve Date.
 - Use region-specific weekends and holidays.
 - Delay days = INT(business hours / 24).
-- Same Day = delay days 0.
+- Same Day = 0 delay days.
 - Delayed 1+ day = delay days greater than or equal to 1.
 - Delayed 10-20 days = delay days between 10 and 20 inclusive.
 - Delayed 20+ days = delay days greater than 20.
@@ -164,28 +90,17 @@ Process timing metrics:
 - Dashboard label "PR Created to PM Approval" uses avgCreateToPmDays.
 - Dashboard label "PM Approval to PO Created" uses avgPmToBuyerDays.
 - Dashboard label "Total Time from PR Creation to PO" uses avgCreateToBuyerDays.
-- median and p90 fields use the same source rows.
 - processTimingCount is the number of Printed POs used for process timing calculations.
 - Monthly process timing fields are grouped by PO Date.
 
-Date and time rules:
-- If a date field has no time value, treat the date as midnight at the start of that calendar day.
-- Do not reject a row only because time-of-day is missing.
-- Business hours are calculated from Requisition PM Approve Date to Requisition Buyer Approve Date.
-- PO Date is only used for monthly grouping.
-- Do not use PO Date to calculate buyer delay.
-
-Weekend rules by region:
-- USA: Saturday, Sunday
-- Canada: Saturday, Sunday
-- Dubai: Saturday, Sunday
-- Saudi: Friday, Saturday
+Weekend rules:
+- USA, Canada, and Dubai exclude Saturday and Sunday.
+- Saudi excludes Friday and Saturday.
 
 Holiday rules:
-1. If dashboard-data.json already contains a holiday list or configured calendar for a region, use that existing list.
-2. If the base JSON does not contain a holiday list, use the 2026 holiday lists from the current dashboard update prompt if provided.
-3. Do not invent holidays.
-4. Do not add state, provincial, or company holidays unless they already exist in the base JSON or I provide them.
+- Use any existing holiday list in dashboard-data.json first.
+- If no holiday list exists, use the provided 2026 regional holiday list from the current prompt.
+- Do not invent holidays or add state, provincial, or company holidays unless provided.
 
 Amounts:
 - Do not convert currencies.
