@@ -18,10 +18,12 @@
         "medianHours": 0.5634555555555556,
         "p90Hours": 3.4016366666666666,
         "totalPRRowsWithPO": 2057,
-        "uniqueReqsWithPO": 1920,
-        "uniquePOs": 2057,
+        "totalPRRowsWithPOBusinessDays": 152,
+        "avgPRRowsWithPOPerBusinessDay": 13.53,
+        "monthlyPRRowsWithPOShown": 2000,
         "priorYearPRRowsWithPO": 57,
-        "monthlyPRRowsWithPOShown": 2000
+        "uniqueReqsWithPO": 1920,
+        "uniquePOs": 2057
       },
       "monthly": [
         {
@@ -714,6 +716,6 @@
     "Business hours exclude weekends and the region-specific 2026 holiday list. Same Day means business hours are less than 24; delay days equal full 24-hour business periods.",
     "Weekend rules used: USA/Canada/Dubai exclude Saturday and Sunday; Saudi excludes Friday and Saturday.",
     "PO amount totals are reported-value sums from the source files and are not converted between currencies.",
-    "USA total PR rows with PO # counts all source rows where PO # is populated, regardless of PO Status. Released PO metrics still use PO Status equals Printed."
+    "USA PR total counts source rows where PO # is populated, regardless of PO Status. Average per day equals PR total divided by total business days shown in the monthly trend."
   ]
 }
