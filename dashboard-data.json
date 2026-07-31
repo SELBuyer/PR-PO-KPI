@@ -2,32 +2,45 @@
   "regions": {
     "USA": {
       "fileName": "Requisition and Purchase Order Status - USA.xlsx",
-      "generatedAt": "2026-07-24 14:18",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 1667",
       "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 11 dates",
       "metrics": {
         "released": 1667,
-        "sameDay": 1665,
-        "sameDayPct": 0.9988002399520096,
-        "delayed1": 2,
-        "delayed1Pct": 0.0011997600479904018,
+        "sameDay": 1662,
+        "sameDayPct": 0.997000599880024,
+        "delayed1": 5,
+        "delayed1Pct": 0.002999400119976005,
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 77954397.96,
-        "avgHours": 1.8387147668799573,
-        "medianHours": 0.5600519444444444,
-        "p90Hours": 3.4016366666666666
+        "avgHours": 1.8852294524428448,
+        "medianHours": 0.5634555555555556,
+        "p90Hours": 3.4016366666666666,
+        "avgRequisitionsPerMonth": 238.14,
+        "overallAvgReqPerBusinessDay": 11.42,
+        "totalBusinessDays": 146,
+        "overallReleasedPct": 1,
+        "processTime": {
+          "createToPmAvgHours": null,
+          "pmToBuyerAvgHours": 1.8852294524428448,
+          "createToBuyerAvgHours": null,
+          "note": "Create-to-PM and Create-to-Buyer timing require source rows with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date. Current JSON contains only aggregated PM-to-Buyer timing."
+        }
       },
       "monthly": [
         {
           "key": "2026-01",
           "month": "January",
           "released": 232,
-          "same_day": 232,
-          "delayed_1": 0,
+          "same_day": 230,
+          "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 5169194.58
+          "amount": 5169194.58,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 11.6,
+          "pctOfTotalReleased": 0.139172
         },
         {
           "key": "2026-02",
@@ -37,7 +50,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 5849091.19
+          "amount": 5849091.19,
+          "businessDays": 19,
+          "avgReqPerBusinessDay": 11.79,
+          "pctOfTotalReleased": 0.134373
         },
         {
           "key": "2026-03",
@@ -47,7 +63,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 13573634.86
+          "amount": 13573634.86,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 11.0,
+          "pctOfTotalReleased": 0.145171
         },
         {
           "key": "2026-04",
@@ -57,7 +76,10 @@
           "delayed_1": 1,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 6859800.14
+          "amount": 6859800.140000001,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 8.45,
+          "pctOfTotalReleased": 0.111578
         },
         {
           "key": "2026-05",
@@ -67,7 +89,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 17953984.98
+          "amount": 17953984.980000008,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 12.85,
+          "pctOfTotalReleased": 0.154169
         },
         {
           "key": "2026-06",
@@ -77,17 +102,23 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 20864285.44
+          "amount": 20864285.440000016,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 14.62,
+          "pctOfTotalReleased": 0.184163
         },
         {
           "key": "2026-07",
           "month": "July",
           "released": 219,
-          "same_day": 218,
-          "delayed_1": 1,
+          "same_day": 217,
+          "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 7684406.77
+          "amount": 7684406.769999999,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 9.95,
+          "pctOfTotalReleased": 0.131374
         }
       ],
       "topDelayed": [
@@ -99,7 +130,57 @@
           "delay": 2,
           "hours": 50.22,
           "amount": 366112.0,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
+        },
+        {
+          "req": "27865",
+          "po": "ES27865",
+          "vendor": "ABB Inc",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.82,
+          "amount": 4765.5,
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
+        },
+        {
+          "req": "27866",
+          "po": "ES27866",
+          "vendor": "Schweitzer Engineering Laboratories, Inc.",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.69,
+          "amount": 48517.78,
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
+        },
+        {
+          "req": "29714",
+          "po": "ES29714",
+          "vendor": "TD Synnex Corporation",
+          "manager": "Mio Edwards",
+          "delay": 1,
+          "hours": 38.66,
+          "amount": 1219.43,
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "28906",
@@ -109,93 +190,18 @@
           "delay": 1,
           "hours": 26.0,
           "amount": 1560.53,
-          "currency": "USD"
-        },
-        {
-          "req": "28860",
-          "po": "ES28860",
-          "vendor": "Panel Built, Inc.",
-          "manager": "Kirk Gould",
-          "delay": 0,
-          "hours": 21.42,
-          "amount": 1587885.0,
-          "currency": "USD"
-        },
-        {
-          "req": "29875",
-          "po": "ES29875",
-          "vendor": "ABB Inc",
-          "manager": "King Lumu",
-          "delay": 0,
-          "hours": 20.85,
-          "amount": 12093.3,
-          "currency": "USD"
-        },
-        {
-          "req": "28295",
-          "po": "ES28295",
-          "vendor": "SEL INC - Enclosures",
-          "manager": "Miguel Vera",
-          "delay": 0,
-          "hours": 20.65,
-          "amount": 645.0,
-          "currency": "USD"
-        },
-        {
-          "req": "27928",
-          "po": "ES27928",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Alex Langseth",
-          "delay": 0,
-          "hours": 19.73,
-          "amount": 14128.0,
-          "currency": "USD"
-        },
-        {
-          "req": "29618",
-          "po": "ES29618",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Dhrushant Patel",
-          "delay": 0,
-          "hours": 19.35,
-          "amount": 9978.24,
-          "currency": "USD"
-        },
-        {
-          "req": "29620",
-          "po": "ES29620",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Dhrushant Patel",
-          "delay": 0,
-          "hours": 19.32,
-          "amount": 9978.24,
-          "currency": "USD"
-        },
-        {
-          "req": "28647",
-          "po": "ES28647",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Alexandra Tomoche",
-          "delay": 0,
-          "hours": 18.24,
-          "amount": 37.5,
-          "currency": "USD"
-        },
-        {
-          "req": "28037",
-          "po": "ES28037",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Mio Edwards",
-          "delay": 0,
-          "hours": 17.87,
-          "amount": 6674.62,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         }
       ]
     },
     "Canada": {
       "fileName": "Requisition and Purchase Order Status - CA.xlsx",
-      "generatedAt": "2026-07-24 14:18",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 34, CAD: 8",
       "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 12 dates",
       "metrics": {
@@ -207,9 +213,19 @@
         "delayed10_20": 0,
         "delayed20": 0,
         "totalAmount": 1172497.2,
-        "avgHours": 3.454329265873016,
+        "avgHours": 3.4543292658730156,
         "medianHours": 0.7814994444444444,
-        "p90Hours": 14.556084083333324
+        "p90Hours": 14.556084083333324,
+        "avgRequisitionsPerMonth": 6.0,
+        "overallAvgReqPerBusinessDay": 0.29,
+        "totalBusinessDays": 147,
+        "overallReleasedPct": 1,
+        "processTime": {
+          "createToPmAvgHours": null,
+          "pmToBuyerAvgHours": 3.4543292658730156,
+          "createToBuyerAvgHours": null,
+          "note": "Create-to-PM and Create-to-Buyer timing require source rows with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date. Current JSON contains only aggregated PM-to-Buyer timing."
+        }
       },
       "monthly": [
         {
@@ -220,7 +236,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 204005.55
+          "amount": 204005.55,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 0.57,
+          "pctOfTotalReleased": 0.285714
         },
         {
           "key": "2026-02",
@@ -230,7 +249,10 @@
           "delayed_1": 1,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 517062.38
+          "amount": 517062.38,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 0.35,
+          "pctOfTotalReleased": 0.166667
         },
         {
           "key": "2026-03",
@@ -240,7 +262,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 102693.67
+          "amount": 102693.67,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 0.14,
+          "pctOfTotalReleased": 0.071429
         },
         {
           "key": "2026-04",
@@ -250,7 +275,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 6809.16
+          "amount": 6809.16,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 0.2,
+          "pctOfTotalReleased": 0.095238
         },
         {
           "key": "2026-05",
@@ -260,7 +288,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 227274.95
+          "amount": 227274.95,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 0.35,
+          "pctOfTotalReleased": 0.166667
         },
         {
           "key": "2026-06",
@@ -270,7 +301,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 47946.92
+          "amount": 47946.92,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 0.23,
+          "pctOfTotalReleased": 0.119048
         },
         {
           "key": "2026-07",
@@ -280,7 +314,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 66704.57
+          "amount": 66704.57,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 0.18,
+          "pctOfTotalReleased": 0.095238
         }
       ],
       "topDelayed": [
@@ -292,103 +329,18 @@
           "delay": 1,
           "hours": 25.47,
           "amount": 22513.31,
-          "currency": "USD"
-        },
-        {
-          "req": "2186",
-          "po": "ESCA2186",
-          "vendor": "SEL INC - Enclosures",
-          "manager": "Umer Khan",
-          "delay": 0,
-          "hours": 23.18,
-          "amount": 246813.0,
-          "currency": "USD"
-        },
-        {
-          "req": "2172",
-          "po": "ESCA2172",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Umer Khan",
-          "delay": 0,
-          "hours": 22.92,
-          "amount": 30794.54,
-          "currency": "USD"
-        },
-        {
-          "req": "2213",
-          "po": "ESCA2213",
-          "vendor": "KELTOUR CONTROLS INC",
-          "manager": "Sara Fatima",
-          "delay": 0,
-          "hours": 17.78,
-          "amount": 11498.38,
-          "currency": "CAD"
-        },
-        {
-          "req": "2197",
-          "po": "ESCA2197",
-          "vendor": "CDW DIRECT LLC",
-          "manager": "Satya Sekhar Kavala",
-          "delay": 0,
-          "hours": 15.17,
-          "amount": 1641.63,
-          "currency": "CAD"
-        },
-        {
-          "req": "2187",
-          "po": "ESCA2187",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Monika Mehta",
-          "delay": 0,
-          "hours": 9.05,
-          "amount": 16715.64,
-          "currency": "USD"
-        },
-        {
-          "req": "2168",
-          "po": "ESCA2166A",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Umer Khan",
-          "delay": 0,
-          "hours": 3.73,
-          "amount": 39.65,
-          "currency": "USD"
-        },
-        {
-          "req": "2180",
-          "po": "ESCA2180",
-          "vendor": "INTERCONNECT SALES INC",
-          "manager": "Satya Sekhar Kavala",
-          "delay": 0,
-          "hours": 2.11,
-          "amount": 63.0,
-          "currency": "USD"
-        },
-        {
-          "req": "2205",
-          "po": "ESCA2205",
-          "vendor": "SEL INC - Enclosures",
-          "manager": "Umer Khan",
-          "delay": 0,
-          "hours": 1.91,
-          "amount": 56260.0,
-          "currency": "USD"
-        },
-        {
-          "req": "2207",
-          "po": "ESCA2207",
-          "vendor": "Schweitzer Engineering Laboratories, Inc.",
-          "manager": "Sara Fatima",
-          "delay": 0,
-          "hours": 1.88,
-          "amount": 8319.28,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         }
       ]
     },
     "Saudi": {
       "fileName": "Requisition and Purchase Order Status - Saudi.xlsx",
-      "generatedAt": "2026-07-24 14:18",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "USD: 128, SAR: 88, AED: 15, EUR: 11, GBP: 2",
       "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 10 dates",
       "metrics": {
@@ -402,7 +354,17 @@
         "totalAmount": 21305327.4,
         "avgHours": 21.819794052823315,
         "medianHours": 18.726591111111112,
-        "p90Hours": 48.57146225000001
+        "p90Hours": 48.57146225000001,
+        "avgRequisitionsPerMonth": 34.86,
+        "overallAvgReqPerBusinessDay": 1.68,
+        "totalBusinessDays": 145,
+        "overallReleasedPct": 1,
+        "processTime": {
+          "createToPmAvgHours": null,
+          "pmToBuyerAvgHours": 21.819794052823315,
+          "createToBuyerAvgHours": null,
+          "note": "Create-to-PM and Create-to-Buyer timing require source rows with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date. Current JSON contains only aggregated PM-to-Buyer timing."
+        }
       },
       "monthly": [
         {
@@ -413,7 +375,10 @@
           "delayed_1": 3,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 7501065.7
+          "amount": 7501065.7,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 0.52,
+          "pctOfTotalReleased": 0.045082
         },
         {
           "key": "2026-02",
@@ -423,7 +388,10 @@
           "delayed_1": 8,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 704423.93
+          "amount": 704423.93,
+          "businessDays": 19,
+          "avgReqPerBusinessDay": 1.32,
+          "pctOfTotalReleased": 0.102459
         },
         {
           "key": "2026-03",
@@ -433,7 +401,10 @@
           "delayed_1": 1,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 125767.13
+          "amount": 125767.13,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 0.33,
+          "pctOfTotalReleased": 0.028689
         },
         {
           "key": "2026-04",
@@ -443,7 +414,10 @@
           "delayed_1": 12,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1852660.28
+          "amount": 1852660.2799999998,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 1.41,
+          "pctOfTotalReleased": 0.127049
         },
         {
           "key": "2026-05",
@@ -453,7 +427,10 @@
           "delayed_1": 2,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1500433.62
+          "amount": 1500433.6199999992,
+          "businessDays": 18,
+          "avgReqPerBusinessDay": 2.0,
+          "pctOfTotalReleased": 0.147541
         },
         {
           "key": "2026-06",
@@ -463,7 +440,10 @@
           "delayed_1": 38,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 6992010.55
+          "amount": 6992010.549999999,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 4.64,
+          "pctOfTotalReleased": 0.418033
         },
         {
           "key": "2026-07",
@@ -473,7 +453,10 @@
           "delayed_1": 12,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 2628966.19
+          "amount": 2628966.19,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 1.45,
+          "pctOfTotalReleased": 0.131148
         }
       ],
       "topDelayed": [
@@ -485,7 +468,12 @@
           "delay": 8,
           "hours": 194.33,
           "amount": 4956.0,
-          "currency": "SAR"
+          "currency": "SAR",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5539",
@@ -495,7 +483,12 @@
           "delay": 6,
           "hours": 167.37,
           "amount": 12406.0,
-          "currency": "GBP"
+          "currency": "GBP",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5543",
@@ -505,7 +498,12 @@
           "delay": 4,
           "hours": 115.41,
           "amount": 13600.0,
-          "currency": "SAR"
+          "currency": "SAR",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5625",
@@ -515,7 +513,12 @@
           "delay": 3,
           "hours": 91.51,
           "amount": 6255.52,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5551",
@@ -525,7 +528,12 @@
           "delay": 3,
           "hours": 84.78,
           "amount": 23360.4,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5552",
@@ -535,7 +543,12 @@
           "delay": 3,
           "hours": 83.89,
           "amount": 31147.2,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5549",
@@ -545,7 +558,12 @@
           "delay": 3,
           "hours": 78.35,
           "amount": 200078.65,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5693",
@@ -555,7 +573,12 @@
           "delay": 2,
           "hours": 71.74,
           "amount": 4410.0,
-          "currency": "SAR"
+          "currency": "SAR",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5700",
@@ -565,7 +588,12 @@
           "delay": 2,
           "hours": 70.83,
           "amount": 17894.0,
-          "currency": "SAR"
+          "currency": "SAR",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "5656",
@@ -575,13 +603,18 @@
           "delay": 2,
           "hours": 68.53,
           "amount": 35069.01,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         }
       ]
     },
     "Dubai": {
       "fileName": "Requisition and Purchase Order Status - UAE.xlsx",
-      "generatedAt": "2026-07-24 14:18",
+      "generatedAt": "2026-07-24 13:42",
       "currencyNote": "AED: 121, USD: 108, EUR: 17, GBP: 5, OMR: 3",
       "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 13 dates",
       "metrics": {
@@ -593,9 +626,19 @@
         "delayed10_20": 3,
         "delayed20": 2,
         "totalAmount": 7954535.12,
-        "avgHours": 27.532509736439195,
+        "avgHours": 27.533279690507438,
         "medianHours": 6.757082361111111,
-        "p90Hours": 49.11555141666667
+        "p90Hours": 49.11555141666667,
+        "avgRequisitionsPerMonth": 36.29,
+        "overallAvgReqPerBusinessDay": 1.76,
+        "totalBusinessDays": 144,
+        "overallReleasedPct": 1,
+        "processTime": {
+          "createToPmAvgHours": null,
+          "pmToBuyerAvgHours": 27.533279690507438,
+          "createToBuyerAvgHours": null,
+          "note": "Create-to-PM and Create-to-Buyer timing require source rows with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date. Current JSON contains only aggregated PM-to-Buyer timing."
+        }
       },
       "monthly": [
         {
@@ -606,7 +649,10 @@
           "delayed_1": 5,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 2909410.43
+          "amount": 2909410.4299999997,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 2.24,
+          "pctOfTotalReleased": 0.185039
         },
         {
           "key": "2026-02",
@@ -616,7 +662,10 @@
           "delayed_1": 13,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 339166.98
+          "amount": 339166.98000000004,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 0.9,
+          "pctOfTotalReleased": 0.070866
         },
         {
           "key": "2026-03",
@@ -626,7 +675,10 @@
           "delayed_1": 12,
           "delayed_10_20": 3,
           "delayed_20": 2,
-          "amount": 1163437.78
+          "amount": 1163437.78,
+          "businessDays": 20,
+          "avgReqPerBusinessDay": 1.8,
+          "pctOfTotalReleased": 0.141732
         },
         {
           "key": "2026-04",
@@ -636,7 +688,10 @@
           "delayed_1": 16,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 289289.19
+          "amount": 289289.18999999994,
+          "businessDays": 22,
+          "avgReqPerBusinessDay": 1.59,
+          "pctOfTotalReleased": 0.137795
         },
         {
           "key": "2026-05",
@@ -646,7 +701,10 @@
           "delayed_1": 0,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 601597.87
+          "amount": 601597.8700000001,
+          "businessDays": 17,
+          "avgReqPerBusinessDay": 2.0,
+          "pctOfTotalReleased": 0.133858
         },
         {
           "key": "2026-06",
@@ -656,7 +714,10 @@
           "delayed_1": 5,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 1745173.92
+          "amount": 1745173.9200000004,
+          "businessDays": 21,
+          "avgReqPerBusinessDay": 1.57,
+          "pctOfTotalReleased": 0.129921
         },
         {
           "key": "2026-07",
@@ -666,7 +727,10 @@
           "delayed_1": 15,
           "delayed_10_20": 0,
           "delayed_20": 0,
-          "amount": 906458.95
+          "amount": 906458.95,
+          "businessDays": 23,
+          "avgReqPerBusinessDay": 2.22,
+          "pctOfTotalReleased": 0.200787
         }
       ],
       "topDelayed": [
@@ -678,7 +742,12 @@
           "delay": 37,
           "hours": 893.28,
           "amount": 3710.0,
-          "currency": "OMR"
+          "currency": "OMR",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3771",
@@ -688,7 +757,12 @@
           "delay": 24,
           "hours": 598.18,
           "amount": 7970.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3773",
@@ -698,7 +772,12 @@
           "delay": 19,
           "hours": 456.03,
           "amount": 7970.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3772",
@@ -708,7 +787,12 @@
           "delay": 18,
           "hours": 439.5,
           "amount": 7970.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3770",
@@ -718,7 +802,12 @@
           "delay": 18,
           "hours": 438.93,
           "amount": 7970.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3878",
@@ -728,7 +817,12 @@
           "delay": 7,
           "hours": 187.29,
           "amount": 1550.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3798",
@@ -738,7 +832,12 @@
           "delay": 5,
           "hours": 138.41,
           "amount": 550.5,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3876",
@@ -748,7 +847,12 @@
           "delay": 4,
           "hours": 111.28,
           "amount": 759.0,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3807",
@@ -758,7 +862,12 @@
           "delay": 4,
           "hours": 96.92,
           "amount": 62225.0,
-          "currency": "USD"
+          "currency": "USD",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         },
         {
           "req": "3814",
@@ -768,7 +877,12 @@
           "delay": 3,
           "hours": 94.29,
           "amount": 1095.0,
-          "currency": "AED"
+          "currency": "AED",
+          "project": "",
+          "supervisor": "",
+          "reqCreateDate": "",
+          "pmApproveDate": "",
+          "buyerApproveDate": ""
         }
       ]
     }
@@ -778,6 +892,10 @@
     "Delay aging is calculated from Requisition PM Approve Date to Requisition Buyer Approve Date. PO Date is used only for monthly grouping.",
     "Business hours exclude weekends and the region-specific 2026 holiday list. Same Day means business hours are less than 24; delay days equal full 24-hour business periods.",
     "Weekend rules used: USA/Canada/Dubai exclude Saturday and Sunday; Saudi excludes Friday and Saturday.",
-    "PO amount totals are reported-value sums from the source files and are not converted between currencies."
+    "PO amount totals are reported-value sums from the source files and are not converted between currencies.",
+    "Monthly average requisitions are calculated as released requisitions divided by business days in the month, excluding the region-specific weekends and 2026 holiday dates.",
+    "Monthly overall percentage is each month's released requisitions divided by total released requisitions for the selected region.",
+    "Full process time is intended to track Requisition Create Date to PM Approve Date to Buyer Approve Date. Current uploaded JSON only contains aggregated PM-to-Buyer timing, so create-to-PM timing will populate when the source CSV rows are included in the next data refresh.",
+    "Delayed requisitions listed at the bottom are requisitions delayed 1+ business day based on full 24-hour business periods between PM approval and Buyer approval."
   ]
 }
