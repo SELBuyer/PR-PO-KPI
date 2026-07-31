@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PR to PO KPI - Process Time</title>
+<title>PR to PO KPI</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="shortcut icon" type="image/png" href="favicon.png">
 <style>
@@ -18,7 +18,7 @@ button{border:1px solid var(--line);background:white;color:var(--dk);padding:10p
 @media(max-width:900px){.kpis,.panel-grid{grid-template-columns:1fr} header,main{padding-left:18px;padding-right:18px}}
 .clipboard-source{position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0}.agent-copy-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
 </style></head><body>
-<header><h1>PR to PO KPI</h1><p>Monthly procurement release metrics, process timing, and delayed requisition detail for USA, Canada, Saudi, and Dubai.</p></header>
+<header><h1>PR to PO KPI</h1><p>Monthly procurement release metrics for USA, Canada, Saudi, and Dubai.</p></header>
 <main><div class="controls" id="regionButtons"></div><section id="dashboard"></section>
 <section class="card" style="margin-top:16px"><h2>Monthly Update Agent Instructions</h2><p class="note">Use this prompt for the agent that updates this file each month.</p><div class="agent-copy-actions"><button type="button" id="copyAgentInstructionsBtn" onclick="copyAgentInstructions()">Copy Agent Instructions</button><span id="copyAgentInstructionsStatus" class="note" aria-live="polite"></span></div><textarea id="agentInstructionsText" class="clipboard-source" readonly aria-hidden="true" tabindex="-1">You are the PR to PO KPI Data Update Agent.
 
@@ -335,15 +335,41 @@ Saudi calendarNote format:
 Return only the updated dashboard-data.json file.</textarea></section>
 </main>
 <script>
-function copyAgentInstructions(){const source=document.getElementById('agentInstructionsText');const status=document.getElementById('copyAgentInstructionsStatus');const text=source.value;const done=()=>{status.textContent='Copied to clipboard.';setTimeout(()=>{status.textContent=''},2500)};const failed=()=>{status.textContent='Copy failed. Select the button again or copy from the source file.'};if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(source,done,failed));}else{fallbackCopy(source,done,failed);}}
-function fallbackCopy(source,done,failed){try{source.focus();source.select();source.setSelectionRange(0,source.value.length);const ok=document.execCommand('copy');window.getSelection().removeAllRanges();ok?done():failed();}catch(err){failed();}}
-let DASHBOARD_DATA;const order=['USA','Canada','Saudi','Dubai'];let current='USA';
-function n(v){return Number(v||0)}function fmtNum(v){return n(v).toLocaleString()}function fmtAmt(v){return n(v).toLocaleString(undefined,{maximumFractionDigits:0})}function fmtPct(v){return (n(v)*100).toFixed(1)+'%'}function fmtHrs(v){return v===null||v===undefined||v===''?'N/A':n(v).toFixed(2)}function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+
+function copyAgentInstructions(){
+  const source=document.getElementById('agentInstructionsText');
+  const status=document.getElementById('copyAgentInstructionsStatus');
+  const text=source.value;
+  const done=()=>{status.textContent='Copied to clipboard.';setTimeout(()=>{status.textContent=''},2500)};
+  const failed=()=>{status.textContent='Copy failed. Select the button again or copy from the source file.'};
+  if(navigator.clipboard && window.isSecureContext){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(source,done,failed));
+  }else{
+    fallbackCopy(source,done,failed);
+  }
+}
+function fallbackCopy(source,done,failed){
+  try{
+    source.focus();
+    source.select();
+    source.setSelectionRange(0,source.value.length);
+    const ok=document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    ok?done():failed();
+  }catch(err){
+    failed();
+  }
+}
+let DASHBOARD_DATA;
+const order=['USA','Canada','Saudi','Dubai']; let current='USA';
+function n(v){return Number(v||0)} function fmtNum(v){return n(v).toLocaleString()} function fmtAmt(v){return n(v).toLocaleString(undefined,{maximumFractionDigits:0})} function fmtPct(v){return (n(v)*100).toFixed(1)+'%'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function renderButtons(){const box=document.getElementById('regionButtons');box.innerHTML='';order.forEach(r=>{const b=document.createElement('button');b.textContent=r;b.className=r===current?'active':'';b.onclick=()=>{current=r;renderButtons();render()};box.appendChild(b)})}
 function kpi(label,value,sub,cls=''){return `<div class="card kpi"><div class="label">${label}</div><div class="value ${cls}">${value}</div><div class="sub">${sub}</div></div>`}
 function renderChart(months){const max=Math.max(1,...months.map(m=>m.released));return `<div class="chart">${months.map(m=>`<div class="barwrap"><div class="bar" style="height:${Math.max(3,m.released/max*220)}px"><span>${m.released}</span></div><div class="barlabel">${esc(m.month)}</div></div>`).join('')}</div>`}
-function renderMonthlyTable(months){return `<table><thead><tr><th>Month</th><th>Released</th><th>Business Days</th><th>Avg / Business Day</th><th>% of Total</th><th>Same Day</th><th>Delayed 1+</th><th>Amount</th></tr></thead><tbody>${months.map(m=>`<tr><td>${esc(m.month)}</td><td>${fmtNum(m.released)}</td><td>${fmtNum(m.businessDays)}</td><td>${n(m.avgReqPerBusinessDay).toFixed(2)}</td><td>${fmtPct(m.pctOfTotalReleased)}</td><td class="good">${fmtNum(m.same_day)}</td><td class="${m.delayed_1?'warn':''}">${fmtNum(m.delayed_1)}</td><td>${fmtAmt(m.amount)}</td></tr>`).join('')}</tbody></table>`}
-function renderDelayed(rows){const delayed=(rows||[]).filter(r=>n(r.delay)>=1);if(!delayed.length)return '<p class="note">No delayed 1+ day requisitions found for this data set.</p>';return `<table><thead><tr><th>Project #</th><th>Requisition #</th><th>Project Manager</th><th>Supervisor</th><th>Req Create</th><th>PM Approved</th><th>Buyer Approved</th><th>Delay Days</th><th>Business Hours</th></tr></thead><tbody>${delayed.map(r=>`<tr><td>${esc(r.project||'N/A')}</td><td>${esc(r.req)}</td><td>${esc(r.manager)}</td><td>${esc(r.supervisor||'N/A')}</td><td>${esc(r.reqCreateDate||'N/A')}</td><td>${esc(r.pmApproveDate||'N/A')}</td><td>${esc(r.buyerApproveDate||'N/A')}</td><td class="bad">${fmtNum(r.delay)}</td><td>${fmtHrs(r.hours)}</td></tr>`).join('')}</tbody></table>`}
-function render(){const region=DASHBOARD_DATA.regions[current];const dash=document.getElementById('dashboard');const m=region.metrics;const pt=m.processTime||{};dash.innerHTML=`<div class="card"><span class="badge">${esc(current)}</span> <span class="note">Source: ${esc(region.fileName)} | Updated: ${esc(region.generatedAt)} | ${esc(region.calendarNote)} | Currencies: ${esc(region.currencyNote)}</span></div><div class="grid kpis" style="margin-top:16px">${kpi('Purchase orders released',fmtNum(m.released),'PO Status = Printed')}${kpi('Same-day release',fmtPct(m.sameDayPct),fmtNum(m.sameDay)+' of '+fmtNum(m.released),'good')}${kpi('Delayed 1+ day',fmtNum(m.delayed1),fmtPct(m.delayed1Pct)+' of released',m.delayed1?'warn':'good')}${kpi('Avg req / business day',n(m.overallAvgReqPerBusinessDay).toFixed(2),fmtNum(m.totalBusinessDays)+' business days')}</div><div class="grid panel-grid"><section class="card"><h2>Monthly Released PO Trend</h2>${renderChart(region.monthly)}</section><section class="card"><h2>Process Time</h2><table><tr><th>Stage</th><th>Avg Hours</th></tr><tr><td>Requisition Create to PM Approved</td><td>${fmtHrs(pt.createToPmAvgHours)}</td></tr><tr><td>PM Approved to Buyer Approved</td><td>${fmtHrs(pt.pmToBuyerAvgHours)}</td></tr><tr><td>Requisition Create to Buyer Approved</td><td>${fmtHrs(pt.createToBuyerAvgHours)}</td></tr></table><p class="note">${esc(pt.note||'')}</p></section></div><section class="card" style="margin-top:16px"><h2>Monthly Average, Excluding Weekends and Holidays</h2>${renderMonthlyTable(region.monthly)}</section><section class="card" style="margin-top:16px"><h2>Delay Aging</h2><table><tr><th>Category</th><th>Count</th><th>% of Released</th></tr><tr><td>Delayed 1+ day</td><td>${fmtNum(m.delayed1)}</td><td>${fmtPct(m.delayed1Pct)}</td></tr><tr><td>Delayed 10-20 days</td><td>${fmtNum(m.delayed10_20)}</td><td>${fmtPct(n(m.delayed10_20)/Math.max(1,n(m.released)))}</td></tr><tr><td>Delayed 20+ days</td><td>${fmtNum(m.delayed20)}</td><td>${fmtPct(n(m.delayed20)/Math.max(1,n(m.released)))}</td></tr></table></section><section class="card" style="margin-top:16px"><h2>Delayed Requisitions 1+ Business Day</h2>${renderDelayed(region.topDelayed||[])}</section>`}
-async function loadData(){try{const response=await fetch('./dashboard-data.json',{cache:'no-store'});if(!response.ok)throw new Error('Unable to load dashboard-data.json: '+response.status);DASHBOARD_DATA=await response.json();renderButtons();render()}catch(err){document.getElementById('dashboard').innerHTML=`<section class="card"><h2>Data file could not be loaded</h2><p class="note">${esc(err.message)}. Confirm dashboard-data.json is uploaded in the same GitHub folder as index.html.</p></section>`;console.error(err)}}loadData();
+function renderMonthlyTable(months){return `<table><thead><tr><th>Month</th><th>Released</th><th>Same Day</th><th>Delayed 1+</th><th>10-20</th><th>20+</th><th>Reported Amount</th></tr></thead><tbody>${months.map(m=>`<tr><td>${esc(m.month)}</td><td>${fmtNum(m.released)}</td><td class="good">${fmtNum(m.same_day)}</td><td class="${m.delayed_1?'warn':''}">${fmtNum(m.delayed_1)}</td><td>${fmtNum(m.delayed_10_20)}</td><td class="${m.delayed_20?'bad':''}">${fmtNum(m.delayed_20)}</td><td>${fmtAmt(m.amount)}</td></tr>`).join('')}</tbody></table>`}
+function renderDelayed(rows){if(!rows.length)return '<p class="note">No delayed 1+ day PR to PO releases found for this data set.</p>';return `<table><thead><tr><th>Req</th><th>PO</th><th>Vendor</th><th>PM</th><th>Delay Days</th><th>Business Hours</th><th>Amount</th><th>Curr</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r.req)}</td><td>${esc(r.po)}</td><td>${esc(r.vendor)}</td><td>${esc(r.manager)}</td><td class="bad">${fmtNum(r.delay)}</td><td>${n(r.hours).toFixed(2)}</td><td>${fmtAmt(r.amount)}</td><td>${esc(r.currency)}</td></tr>`).join('')}</tbody></table>`}
+function render(){const region=DASHBOARD_DATA.regions[current];const dash=document.getElementById('dashboard');const m=region.metrics;dash.innerHTML=`<div class="card"><span class="badge">${esc(current)}</span> <span class="note">Source: ${esc(region.fileName)} | Updated: ${esc(region.generatedAt)} | ${esc(region.calendarNote)} | Currencies: ${esc(region.currencyNote)}</span></div><div class="grid kpis" style="margin-top:16px">${kpi('Purchase orders released',fmtNum(m.released),'PO Status = Printed')}${kpi('Same-day release',fmtPct(m.sameDayPct),fmtNum(m.sameDay)+' of '+fmtNum(m.released),'good')}${kpi('Delayed 1+ day',fmtNum(m.delayed1),fmtPct(m.delayed1Pct)+' of released',m.delayed1?'warn':'good')}${kpi('Total PO amount',fmtAmt(m.totalAmount),'Reported values; no FX conversion')}</div><div class="grid panel-grid"><section class="card"><h2>Monthly Released PO Trend</h2>${renderChart(region.monthly)}</section><section class="card"><h2>Delay Aging</h2><table><tr><th>Category</th><th>Count</th></tr><tr><td>Delayed 1+ day</td><td>${fmtNum(m.delayed1)}</td></tr><tr><td>Delayed 10-20 days</td><td>${fmtNum(m.delayed10_20)}</td></tr><tr><td>Delayed 20+ days</td><td>${fmtNum(m.delayed20)}</td></tr></table></section></div>`}
+async function loadData(){try{const response=await fetch('./dashboard-data.json',{cache:'no-store'});if(!response.ok)throw new Error('Unable to load dashboard-data.json: '+response.status);DASHBOARD_DATA=await response.json();renderButtons();render()}catch(err){document.getElementById('dashboard').innerHTML=`<section class="card"><h2>Data file could not be loaded</h2><p class="note">${esc(err.message)}. Confirm dashboard-data.json is uploaded in the same GitHub folder as index.html.</p></section>`;console.error(err)}}
+loadData();
 </script></body></html>
