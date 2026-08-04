@@ -2,38 +2,38 @@
     "regions": {
         "USA": {
             "fileName": "Requisition and Purchase Order Status - USA.xlsx",
-            "generatedAt": "2026-07-31 22:29",
-            "currencyNote": "USD: 1740",
+            "generatedAt": "2026-08-04 16:31",
+            "currencyNote": "USD: 2147, EUR: 1",
             "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
             "metrics": {
-                "released": 1740,
-                "sameDay": 1735,
-                "sameDayPct": 0.9971264367816092,
+                "released": 1736,
+                "sameDay": 1731,
+                "sameDayPct": 0.9971198156682027,
                 "delayed1": 5,
-                "delayed1Pct": 0.0028735632183908046,
+                "delayed1Pct": 0.002880184331797235,
                 "delayed10_20": 0,
                 "delayed20": 0,
-                "totalAmount": 82703672.02,
-                "avgHours": 1.876933794528257,
-                "medianHours": 0.5449093055555555,
-                "p90Hours": 3.401571666666667,
-                "totalPRRowsWithPO": 2149,
+                "totalAmount": 118626658.15,
+                "avgHours": 1.8805134336597542,
+                "medianHours": 0.5459731944444444,
+                "p90Hours": 3.4016583333333337,
+                "totalPRRowsWithPO": 2148,
                 "totalPRRowsWithPOBusinessDays": 152,
-                "avgPRRowsWithPOPerBusinessDay": 13.75,
-                "monthlyPRRowsWithPOShown": 2090,
-                "priorYearPRRowsWithPO": 59,
-                "uniqueReqsWithPO": 2006,
-                "uniquePOs": 2149,
+                "avgPRRowsWithPOPerBusinessDay": 13.74,
+                "monthlyPRRowsWithPOShown": 2088,
+                "priorYearPRRowsWithPO": 60,
+                "uniqueReqsWithPO": 2004,
+                "uniquePOs": 2148,
                 "avgCreateToPmDays": 1.3,
                 "medianCreateToPmDays": 0.07,
-                "p90CreateToPmDays": 3.9,
+                "p90CreateToPmDays": 3.89,
                 "avgPmToBuyerDays": 0.1,
                 "medianPmToBuyerDays": 0.02,
                 "p90PmToBuyerDays": 0.14,
                 "avgCreateToBuyerDays": 1.4,
                 "medianCreateToBuyerDays": 0.13,
                 "p90CreateToBuyerDays": 3.96,
-                "processTimingCount": 1740
+                "processTimingCount": 1736
             },
             "monthly": [
                 {
@@ -52,7 +52,7 @@
                     "delayed_1": 2,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 5169194.58
+                    "amount": 7465113.85
                 },
                 {
                     "key": "2026-02",
@@ -70,7 +70,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 5844996.19
+                    "amount": 8266760.79
                 },
                 {
                     "key": "2026-03",
@@ -88,7 +88,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 13566606.73
+                    "amount": 15750888.63
                 },
                 {
                     "key": "2026-04",
@@ -106,7 +106,7 @@
                     "delayed_1": 1,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 6859800.14
+                    "amount": 8427895.11
                 },
                 {
                     "key": "2026-05",
@@ -124,43 +124,43 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 17648748.98
+                    "amount": 25893285.22
                 },
                 {
                     "key": "2026-06",
                     "month": "June",
-                    "released": 304,
+                    "released": 303,
                     "totalPRRowsWithPO": 364,
                     "avgPRRowsWithPOPerBusinessDay": 16.55,
                     "avgCreateToPmDays": 1.53,
                     "avgPmToBuyerDays": 0.08,
-                    "avgCreateToBuyerDays": 1.6,
-                    "processTimingCount": 304,
-                    "avgPOsPerBusinessDay": 13.82,
+                    "avgCreateToBuyerDays": 1.61,
+                    "processTimingCount": 303,
+                    "avgPOsPerBusinessDay": 13.77,
                     "businessDays": 22,
-                    "same_day": 304,
+                    "same_day": 303,
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 20531512.73
+                    "amount": 27917593.09
                 },
                 {
                     "key": "2026-07",
                     "month": "July",
-                    "released": 301,
-                    "totalPRRowsWithPO": 328,
-                    "avgPRRowsWithPOPerBusinessDay": 14.26,
-                    "avgCreateToPmDays": 1.51,
-                    "avgPmToBuyerDays": 0.18,
-                    "avgCreateToBuyerDays": 1.69,
-                    "processTimingCount": 301,
-                    "avgPOsPerBusinessDay": 13.09,
+                    "released": 297,
+                    "totalPRRowsWithPO": 326,
+                    "avgPRRowsWithPOPerBusinessDay": 14.17,
+                    "avgCreateToPmDays": 1.47,
+                    "avgPmToBuyerDays": 0.19,
+                    "avgCreateToBuyerDays": 1.66,
+                    "processTimingCount": 297,
+                    "avgPOsPerBusinessDay": 12.91,
                     "businessDays": 23,
-                    "same_day": 299,
+                    "same_day": 295,
                     "delayed_1": 2,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 13082812.67
+                    "amount": 13785805.26
                 }
             ],
             "topDelayed": [
@@ -310,8 +310,8 @@
         },
         "Canada": {
             "fileName": "Requisition and Purchase Order Status - CA.xlsx",
-            "generatedAt": "2026-07-31 22:29",
-            "currencyNote": "USD: 32, CAD: 8",
+            "generatedAt": "2026-08-04 16:31",
+            "currencyNote": "USD: 39, CAD: 12",
             "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
             "metrics": {
                 "released": 40,
@@ -321,10 +321,10 @@
                 "delayed1Pct": 0.025,
                 "delayed10_20": 0,
                 "delayed20": 0,
-                "totalAmount": 1157254.25,
-                "avgHours": 3.605218951354167,
+                "totalAmount": 1491508.97,
+                "avgHours": 3.6052189513888893,
                 "medianHours": 0.8198875,
-                "p90Hours": 15.428399361083338,
+                "p90Hours": 15.428399361111115,
                 "totalPRRowsWithPO": 51,
                 "totalPRRowsWithPOBusinessDays": 152,
                 "avgPRRowsWithPOPerBusinessDay": 0.34,
@@ -360,7 +360,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 204005.55
+                    "amount": 240070.09
                 },
                 {
                     "key": "2026-02",
@@ -378,7 +378,7 @@
                     "delayed_1": 1,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 517062.38
+                    "amount": 566542.38
                 },
                 {
                     "key": "2026-03",
@@ -396,7 +396,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 102693.67
+                    "amount": 268729.83
                 },
                 {
                     "key": "2026-04",
@@ -414,7 +414,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 6809.16
+                    "amount": 8450.79
                 },
                 {
                     "key": "2026-05",
@@ -432,7 +432,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 227274.95
+                    "amount": 291605.87
                 },
                 {
                     "key": "2026-06",
@@ -450,7 +450,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 41516.67
+                    "amount": 49081.76
                 },
                 {
                     "key": "2026-07",
@@ -468,7 +468,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 57891.87
+                    "amount": 67028.25
                 }
             ],
             "topDelayed": [
@@ -506,38 +506,38 @@
         },
         "Saudi": {
             "fileName": "Requisition and Purchase Order Status - Saudi.xlsx",
-            "generatedAt": "2026-07-31 22:29",
-            "currencyNote": "USD: 135, AED: 15, SAR: 88, EUR: 11, GBP: 2",
+            "generatedAt": "2026-08-04 16:31",
+            "currencyNote": "USD: 169, SAR: 122, AED: 18, EUR: 12, GBP: 3, BHD: 1",
             "calendarNote": "Weekends excluded: Fri, Sat; Holidays excluded: 0 dates",
             "metrics": {
-                "released": 251,
-                "sameDay": 175,
-                "sameDayPct": 0.6972111553784861,
+                "released": 252,
+                "sameDay": 176,
+                "sameDayPct": 0.6984126984126984,
                 "delayed1": 76,
-                "delayed1Pct": 0.30278884462151395,
+                "delayed1Pct": 0.30158730158730157,
                 "delayed10_20": 0,
                 "delayed20": 0,
-                "totalAmount": 21416033.7,
-                "avgHours": 21.346767904807436,
-                "medianHours": 18.453900833055556,
-                "p90Hours": 48.06612777722222,
-                "totalPRRowsWithPO": 324,
+                "totalAmount": 34004977.48,
+                "avgHours": 21.262845923721343,
+                "medianHours": 18.009665277777778,
+                "p90Hours": 48.06612777777778,
+                "totalPRRowsWithPO": 325,
                 "totalPRRowsWithPOBusinessDays": 151,
                 "avgPRRowsWithPOPerBusinessDay": 2.15,
                 "monthlyPRRowsWithPOShown": 324,
-                "priorYearPRRowsWithPO": 0,
-                "uniqueReqsWithPO": 248,
-                "uniquePOs": 324,
-                "avgCreateToPmDays": 1.3,
+                "priorYearPRRowsWithPO": 1,
+                "uniqueReqsWithPO": 249,
+                "uniquePOs": 325,
+                "avgCreateToPmDays": 1.33,
                 "medianCreateToPmDays": 0.12,
-                "p90CreateToPmDays": 3.08,
-                "avgPmToBuyerDays": 1.04,
-                "medianPmToBuyerDays": 0.85,
+                "p90CreateToPmDays": 3.72,
+                "avgPmToBuyerDays": 1.03,
+                "medianPmToBuyerDays": 0.83,
                 "p90PmToBuyerDays": 2.09,
-                "avgCreateToBuyerDays": 2.33,
-                "medianCreateToBuyerDays": 1.04,
-                "p90CreateToBuyerDays": 5.54,
-                "processTimingCount": 251
+                "avgCreateToBuyerDays": 2.36,
+                "medianCreateToBuyerDays": 1.05,
+                "p90CreateToBuyerDays": 5.61,
+                "processTimingCount": 252
             },
             "monthly": [
                 {
@@ -556,7 +556,7 @@
                     "delayed_1": 3,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 7501065.7
+                    "amount": 8606346.69
                 },
                 {
                     "key": "2026-02",
@@ -574,7 +574,7 @@
                     "delayed_1": 8,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 704423.93
+                    "amount": 1305733.07
                 },
                 {
                     "key": "2026-03",
@@ -592,7 +592,7 @@
                     "delayed_1": 1,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 125767.13
+                    "amount": 307621.53
                 },
                 {
                     "key": "2026-04",
@@ -610,7 +610,7 @@
                     "delayed_1": 12,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 1852660.28
+                    "amount": 7540901.21
                 },
                 {
                     "key": "2026-05",
@@ -628,7 +628,7 @@
                     "delayed_1": 2,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 1500433.62
+                    "amount": 1884634.65
                 },
                 {
                     "key": "2026-06",
@@ -646,7 +646,7 @@
                     "delayed_1": 38,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 6992010.55
+                    "amount": 11130068.35
                 },
                 {
                     "key": "2026-07",
@@ -664,7 +664,7 @@
                     "delayed_1": 12,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 2739672.49
+                    "amount": 3229066.82
                 }
             ],
             "topDelayed": [
@@ -1878,21 +1878,21 @@
         },
         "Dubai": {
             "fileName": "Requisition and Purchase Order Status - UAE.xlsx",
-            "generatedAt": "2026-07-31 22:29",
-            "currencyNote": "USD: 113, AED: 121, EUR: 17, OMR: 3, GBP: 5",
+            "generatedAt": "2026-08-04 16:31",
+            "currencyNote": "AED: 159, USD: 135, EUR: 20, GBP: 7, OMR: 4",
             "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
             "metrics": {
-                "released": 259,
-                "sameDay": 192,
-                "sameDayPct": 0.7413127413127413,
+                "released": 260,
+                "sameDay": 193,
+                "sameDayPct": 0.7423076923076923,
                 "delayed1": 67,
-                "delayed1Pct": 0.25868725868725867,
+                "delayed1Pct": 0.25769230769230766,
                 "delayed10_20": 3,
                 "delayed20": 2,
-                "totalAmount": 8242853.28,
-                "avgHours": 27.35226390575397,
-                "medianHours": 6.826965,
-                "p90Hours": 49.10799683277778,
+                "totalAmount": 11462453.71,
+                "avgHours": 27.256120441239315,
+                "medianHours": 6.82242875,
+                "p90Hours": 49.106485916666664,
                 "totalPRRowsWithPO": 325,
                 "totalPRRowsWithPOBusinessDays": 152,
                 "avgPRRowsWithPOPerBusinessDay": 2.14,
@@ -1903,13 +1903,13 @@
                 "avgCreateToPmDays": 1.29,
                 "medianCreateToPmDays": 0.09,
                 "p90CreateToPmDays": 4.1,
-                "avgPmToBuyerDays": 1.51,
+                "avgPmToBuyerDays": 1.5,
                 "medianPmToBuyerDays": 0.28,
                 "p90PmToBuyerDays": 3.27,
-                "avgCreateToBuyerDays": 2.8,
+                "avgCreateToBuyerDays": 2.79,
                 "medianCreateToBuyerDays": 0.83,
                 "p90CreateToBuyerDays": 6.16,
-                "processTimingCount": 259
+                "processTimingCount": 260
             },
             "monthly": [
                 {
@@ -1928,7 +1928,7 @@
                     "delayed_1": 5,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 2909410.43
+                    "amount": 2945013.51
                 },
                 {
                     "key": "2026-02",
@@ -1946,7 +1946,7 @@
                     "delayed_1": 13,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 339166.98
+                    "amount": 355666.98
                 },
                 {
                     "key": "2026-03",
@@ -1964,7 +1964,7 @@
                     "delayed_1": 12,
                     "delayed_10_20": 3,
                     "delayed_20": 2,
-                    "amount": 1163437.78
+                    "amount": 3332032.12
                 },
                 {
                     "key": "2026-04",
@@ -1982,7 +1982,7 @@
                     "delayed_1": 16,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 289289.19
+                    "amount": 389622.45
                 },
                 {
                     "key": "2026-05",
@@ -2000,7 +2000,7 @@
                     "delayed_1": 0,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 470809.65
+                    "amount": 754637.64
                 },
                 {
                     "key": "2026-06",
@@ -2018,25 +2018,25 @@
                     "delayed_1": 5,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 1745173.92
+                    "amount": 2188631.93
                 },
                 {
                     "key": "2026-07",
                     "month": "July",
-                    "released": 57,
+                    "released": 58,
                     "totalPRRowsWithPO": 67,
                     "avgPRRowsWithPOPerBusinessDay": 2.91,
-                    "avgCreateToPmDays": 1.23,
-                    "avgPmToBuyerDays": 0.62,
-                    "avgCreateToBuyerDays": 1.84,
-                    "processTimingCount": 57,
-                    "avgPOsPerBusinessDay": 2.48,
+                    "avgCreateToPmDays": 1.2,
+                    "avgPmToBuyerDays": 0.61,
+                    "avgCreateToBuyerDays": 1.81,
+                    "processTimingCount": 58,
+                    "avgPOsPerBusinessDay": 2.52,
                     "businessDays": 23,
-                    "same_day": 41,
+                    "same_day": 42,
                     "delayed_1": 16,
                     "delayed_10_20": 0,
                     "delayed_20": 0,
-                    "amount": 1325565.33
+                    "amount": 1496849.08
                 }
             ],
             "topDelayed": [
@@ -2047,7 +2047,7 @@
                     "pmApproveDate": "2026-01-13",
                     "buyerApproveDate": "2026-03-05",
                     "vendor": "MASHARIE ABU FALAK ALSHIHHI",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 37,
                     "hours": 893.28,
                     "amount": 3710.0,
@@ -2089,7 +2089,7 @@
                     "pmApproveDate": "2026-01-26",
                     "buyerApproveDate": "2026-02-19",
                     "vendor": "Spice Technology Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 18,
                     "hours": 439.5,
                     "amount": 7970.0,
@@ -2103,7 +2103,7 @@
                     "pmApproveDate": "2026-01-26",
                     "buyerApproveDate": "2026-02-19",
                     "vendor": "Spice Technology Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 18,
                     "hours": 438.93,
                     "amount": 7970.0,
@@ -2117,7 +2117,7 @@
                     "pmApproveDate": "2026-04-14",
                     "buyerApproveDate": "2026-04-24",
                     "vendor": "Arabian Falcon Electrical Equipment LLC",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 7,
                     "hours": 187.29,
                     "amount": 1550.0,
@@ -2131,7 +2131,7 @@
                     "pmApproveDate": "2026-02-05",
                     "buyerApproveDate": "2026-02-13",
                     "vendor": "RBH Solutions Pvt. Ltd.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 5,
                     "hours": 138.41,
                     "amount": 550.5,
@@ -2189,7 +2189,7 @@
                     "pmApproveDate": "2026-01-13",
                     "buyerApproveDate": "2026-03-05",
                     "vendor": "MASHARIE ABU FALAK ALSHIHHI",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 37,
                     "hours": 893.28,
                     "amount": 3710.0,
@@ -2231,7 +2231,7 @@
                     "pmApproveDate": "2026-01-26",
                     "buyerApproveDate": "2026-02-19",
                     "vendor": "Spice Technology Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 18,
                     "hours": 439.5,
                     "amount": 7970.0,
@@ -2245,7 +2245,7 @@
                     "pmApproveDate": "2026-01-26",
                     "buyerApproveDate": "2026-02-19",
                     "vendor": "Spice Technology Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 18,
                     "hours": 438.93,
                     "amount": 7970.0,
@@ -2259,7 +2259,7 @@
                     "pmApproveDate": "2026-04-14",
                     "buyerApproveDate": "2026-04-24",
                     "vendor": "Arabian Falcon Electrical Equipment LLC",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 7,
                     "hours": 187.29,
                     "amount": 1550.0,
@@ -2273,7 +2273,7 @@
                     "pmApproveDate": "2026-02-05",
                     "buyerApproveDate": "2026-02-13",
                     "vendor": "RBH Solutions Pvt. Ltd.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 5,
                     "hours": 138.41,
                     "amount": 550.5,
@@ -2371,7 +2371,7 @@
                     "pmApproveDate": "2026-02-24",
                     "buyerApproveDate": "2026-02-27",
                     "vendor": "World of Technology for Connectivity",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 3,
                     "hours": 78.42,
                     "amount": 1095.0,
@@ -2385,7 +2385,7 @@
                     "pmApproveDate": "2026-02-24",
                     "buyerApproveDate": "2026-02-27",
                     "vendor": "World of Technology for Connectivity",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 3,
                     "hours": 78.42,
                     "amount": 1095.0,
@@ -2399,7 +2399,7 @@
                     "pmApproveDate": "2026-02-11",
                     "buyerApproveDate": "2026-02-16",
                     "vendor": "SIEMENS INDUSTRIAL LLC",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 3,
                     "hours": 77.25,
                     "amount": 62225.0,
@@ -2413,7 +2413,7 @@
                     "pmApproveDate": "2026-02-11",
                     "buyerApproveDate": "2026-02-16",
                     "vendor": "SIEMENS INDUSTRIAL LLC",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 3,
                     "hours": 76.73,
                     "amount": 62225.0,
@@ -2441,7 +2441,7 @@
                     "pmApproveDate": "2026-04-17",
                     "buyerApproveDate": "2026-04-21",
                     "vendor": "HVR PENTAGON LTD",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 2,
                     "hours": 56.37,
                     "amount": 1423.5,
@@ -2511,7 +2511,7 @@
                     "pmApproveDate": "2026-04-10",
                     "buyerApproveDate": "2026-04-14",
                     "vendor": "PHOENIX CONTACT Middle East FZ LLC",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 2,
                     "hours": 51.07,
                     "amount": 1588.12,
@@ -2720,8 +2720,8 @@
                     "poDate": "2026-07-29",
                     "pmApproveDate": "2026-07-16",
                     "buyerApproveDate": "2026-07-20",
-                    "vendor": "WINSTAR ELECTRICAL CONTRACTING L.L.C",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "vendor": "WINSTAR ELECTRICAL CONTRACTING  L.L.C",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 42.63,
                     "amount": 24350.0,
@@ -2735,7 +2735,7 @@
                     "pmApproveDate": "2026-06-21",
                     "buyerApproveDate": "2026-06-23",
                     "vendor": "Al Jash Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 39.87,
                     "amount": 569.0,
@@ -2749,7 +2749,7 @@
                     "pmApproveDate": "2026-06-21",
                     "buyerApproveDate": "2026-06-23",
                     "vendor": "Al Jash Trading",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 39.84,
                     "amount": 569.0,
@@ -2763,7 +2763,7 @@
                     "pmApproveDate": "2026-03-27",
                     "buyerApproveDate": "2026-03-31",
                     "vendor": "SEL India",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 39.28,
                     "amount": 221447.63,
@@ -2959,7 +2959,7 @@
                     "pmApproveDate": "2026-01-30",
                     "buyerApproveDate": "2026-02-02",
                     "vendor": "Schweitzer Engineering Laboratories, Inc.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 26.51,
                     "amount": 5825.96,
@@ -3057,7 +3057,7 @@
                     "pmApproveDate": "2026-01-23",
                     "buyerApproveDate": "2026-01-26",
                     "vendor": "Schweitzer Engineering Laboratories, Inc.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 24.77,
                     "amount": 8669.74,
@@ -3085,7 +3085,7 @@
                     "pmApproveDate": "2026-01-23",
                     "buyerApproveDate": "2026-01-26",
                     "vendor": "Schweitzer Engineering Laboratories, Inc.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 24.66,
                     "amount": 4531.23,
@@ -3099,7 +3099,7 @@
                     "pmApproveDate": "2026-06-30",
                     "buyerApproveDate": "2026-07-01",
                     "vendor": "Schweitzer Engineering Laboratories, Inc.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 24.12,
                     "amount": 50043.04,
@@ -3113,7 +3113,7 @@
                     "pmApproveDate": "2026-03-30",
                     "buyerApproveDate": "2026-03-31",
                     "vendor": "Schweitzer Engineering Laboratories, Inc.",
-                    "manager": "Karthikeyan Lakshmanan",
+                    "manager": "Atul Kadukar",
                     "delay": 1,
                     "hours": 24.05,
                     "amount": 5573.56,
@@ -3131,6 +3131,72 @@
         "PO amount totals are reported-value sums from the source files and are not converted between currencies.",
         "USA PR total counts source rows where PO # is populated, regardless of PO Status. Average per day equals PR total divided by total business days shown in the monthly trend.",
         "The delayed PO detail section lists Printed POs with a buyer approval delay of 1 or more business days, calculated from Requisition PM Approve Date to Requisition Buyer Approve Date.",
-        "Process timing metrics use calendar elapsed days for Printed POs with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date populated."
-    ]
+        "Process timing metrics use calendar elapsed days for Printed POs with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date populated.",
+        "exchangeRatesToUSD was populated with public monthly average rates and fixed-peg rates; use SEL Finance-approved rates if required for official reporting."
+    ],
+    "exchangeRatesToUSD": {
+        "2026-01": {
+            "USD": 1.0,
+            "CAD": 0.726164,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1744,
+            "GBP": 1.3536,
+            "OMR": 2.6008
+        },
+        "2026-02": {
+            "USD": 1.0,
+            "CAD": 0.732708,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1824,
+            "GBP": 1.3579,
+            "OMR": 2.6008
+        },
+        "2026-03": {
+            "USD": 1.0,
+            "CAD": 0.728863,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1557,
+            "GBP": 1.3339,
+            "OMR": 2.6008
+        },
+        "2026-04": {
+            "USD": 1.0,
+            "CAD": 0.727061,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1697,
+            "GBP": 1.3454,
+            "OMR": 2.6008
+        },
+        "2026-05": {
+            "USD": 1.0,
+            "CAD": 0.729022,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1681,
+            "GBP": 1.3498,
+            "OMR": 2.6008
+        },
+        "2026-06": {
+            "USD": 1.0,
+            "CAD": 0.712555,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.1516,
+            "GBP": 1.3338,
+            "OMR": 2.6008
+        },
+        "2026-07": {
+            "USD": 1.0,
+            "CAD": 0.708868,
+            "AED": 0.272294,
+            "SAR": 0.266667,
+            "EUR": 1.142412,
+            "GBP": 1.338484,
+            "OMR": 2.6008
+        }
+    }
 }
