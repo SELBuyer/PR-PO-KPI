@@ -2,7 +2,7 @@
   "regions": {
     "USA": {
       "fileName": "Requisition and Purchase Order Status - USA.xlsx",
-      "generatedAt": "2026-08-07 14:29",
+      "generatedAt": "2026-08-07 22:35",
       "currencyNote": "USD: 2212, EUR: 1",
       "calendarNote": "Weekends excluded: Sat, Sun; Holidays excluded: 0 dates",
       "metrics": {
@@ -17,12 +17,12 @@
         "avgHours": 1.8576711445128014,
         "medianHours": 0.54273875,
         "p90Hours": 3.290186138888888,
-        "totalPRRowsWithPO": 2480,
-        "totalPRRowsWithPOBusinessDays": 156,
-        "avgPRRowsWithPOPerBusinessDay": 15.9,
-        "monthlyPRRowsWithPOShown": 2480,
+        "totalPRRowsWithPO": 2404,
+        "totalPRRowsWithPOBusinessDays": 157,
+        "avgPRRowsWithPOPerBusinessDay": 15.31,
+        "monthlyPRRowsWithPOShown": 2404,
         "priorYearPRRowsWithPO": 0,
-        "uniqueReqsWithPO": 2331,
+        "uniqueReqsWithPO": 2255,
         "uniquePOs": 2210,
         "avgCreateToPmDays": 1.27,
         "medianCreateToPmDays": 0.07,
@@ -34,12 +34,12 @@
         "medianCreateToBuyerDays": 0.13,
         "p90CreateToBuyerDays": 3.95,
         "processTimingCount": 1788,
-        "totalPRRows": 2480,
-        "totalPRRowsBusinessDays": 156,
-        "avgPRRowsPerBusinessDay": 15.9,
-        "monthlyPRRowsShown": 2480,
+        "totalPRRows": 2404,
+        "totalPRRowsBusinessDays": 157,
+        "avgPRRowsPerBusinessDay": 15.31,
+        "monthlyPRRowsShown": 2404,
         "priorYearPRRows": 0,
-        "uniqueReqs": 2331,
+        "uniqueReqs": 2255,
         "undatedRequisitionRows": 0
       },
       "monthly": [
@@ -47,8 +47,8 @@
           "key": "2026-01",
           "month": "January",
           "released": 229,
-          "totalPRRowsWithPO": 318,
-          "avgPRRowsWithPOPerBusinessDay": 14.45,
+          "totalPRRowsWithPO": 300,
+          "avgPRRowsWithPOPerBusinessDay": 13.64,
           "avgCreateToPmDays": 0.87,
           "avgPmToBuyerDays": 0.1,
           "avgCreateToBuyerDays": 0.97,
@@ -67,47 +67,55 @@
             },
             {
               "date": "2026-01-05",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-01-06",
-              "count": 10
+              "count": 9
             },
             {
               "date": "2026-01-07",
-              "count": 23
+              "count": 16
             },
             {
               "date": "2026-01-08",
-              "count": 22
+              "count": 26
             },
             {
               "date": "2026-01-09",
-              "count": 13
+              "count": 9
+            },
+            {
+              "date": "2026-01-10",
+              "count": 2
             },
             {
               "date": "2026-01-12",
-              "count": 11
-            },
-            {
-              "date": "2026-01-13",
-              "count": 17
-            },
-            {
-              "date": "2026-01-14",
-              "count": 11
-            },
-            {
-              "date": "2026-01-15",
-              "count": 10
-            },
-            {
-              "date": "2026-01-16",
               "count": 14
             },
             {
+              "date": "2026-01-13",
+              "count": 16
+            },
+            {
+              "date": "2026-01-14",
+              "count": 13
+            },
+            {
+              "date": "2026-01-15",
+              "count": 7
+            },
+            {
+              "date": "2026-01-16",
+              "count": 11
+            },
+            {
+              "date": "2026-01-17",
+              "count": 2
+            },
+            {
               "date": "2026-01-20",
-              "count": 21
+              "count": 14
             },
             {
               "date": "2026-01-21",
@@ -115,7 +123,7 @@
             },
             {
               "date": "2026-01-22",
-              "count": 21
+              "count": 15
             },
             {
               "date": "2026-01-23",
@@ -123,35 +131,35 @@
             },
             {
               "date": "2026-01-24",
-              "count": 1
+              "count": 3
             },
             {
               "date": "2026-01-26",
-              "count": 15
-            },
-            {
-              "date": "2026-01-27",
-              "count": 13
-            },
-            {
-              "date": "2026-01-28",
-              "count": 26
-            },
-            {
-              "date": "2026-01-29",
               "count": 19
             },
             {
+              "date": "2026-01-27",
+              "count": 12
+            },
+            {
+              "date": "2026-01-28",
+              "count": 23
+            },
+            {
+              "date": "2026-01-29",
+              "count": 23
+            },
+            {
               "date": "2026-01-30",
-              "count": 15
+              "count": 13
             },
             {
               "date": "2026-01-31",
-              "count": 1
+              "count": 3
             }
           ],
-          "totalPRRows": 318,
-          "avgPRRowsPerBusinessDay": 14.45,
+          "totalPRRows": 300,
+          "avgPRRowsPerBusinessDay": 13.64,
           "dailyPRRows": [
             {
               "date": "2026-01-02",
@@ -159,47 +167,55 @@
             },
             {
               "date": "2026-01-05",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-01-06",
-              "count": 10
+              "count": 9
             },
             {
               "date": "2026-01-07",
-              "count": 23
+              "count": 16
             },
             {
               "date": "2026-01-08",
-              "count": 22
+              "count": 26
             },
             {
               "date": "2026-01-09",
-              "count": 13
+              "count": 9
+            },
+            {
+              "date": "2026-01-10",
+              "count": 2
             },
             {
               "date": "2026-01-12",
-              "count": 11
-            },
-            {
-              "date": "2026-01-13",
-              "count": 17
-            },
-            {
-              "date": "2026-01-14",
-              "count": 11
-            },
-            {
-              "date": "2026-01-15",
-              "count": 10
-            },
-            {
-              "date": "2026-01-16",
               "count": 14
             },
             {
+              "date": "2026-01-13",
+              "count": 16
+            },
+            {
+              "date": "2026-01-14",
+              "count": 13
+            },
+            {
+              "date": "2026-01-15",
+              "count": 7
+            },
+            {
+              "date": "2026-01-16",
+              "count": 11
+            },
+            {
+              "date": "2026-01-17",
+              "count": 2
+            },
+            {
               "date": "2026-01-20",
-              "count": 21
+              "count": 14
             },
             {
               "date": "2026-01-21",
@@ -207,7 +223,7 @@
             },
             {
               "date": "2026-01-22",
-              "count": 21
+              "count": 15
             },
             {
               "date": "2026-01-23",
@@ -215,31 +231,31 @@
             },
             {
               "date": "2026-01-24",
-              "count": 1
+              "count": 3
             },
             {
               "date": "2026-01-26",
-              "count": 15
-            },
-            {
-              "date": "2026-01-27",
-              "count": 13
-            },
-            {
-              "date": "2026-01-28",
-              "count": 26
-            },
-            {
-              "date": "2026-01-29",
               "count": 19
             },
             {
+              "date": "2026-01-27",
+              "count": 12
+            },
+            {
+              "date": "2026-01-28",
+              "count": 23
+            },
+            {
+              "date": "2026-01-29",
+              "count": 23
+            },
+            {
               "date": "2026-01-30",
-              "count": 15
+              "count": 13
             },
             {
               "date": "2026-01-31",
-              "count": 1
+              "count": 3
             }
           ]
         },
@@ -247,8 +263,8 @@
           "key": "2026-02",
           "month": "February",
           "released": 223,
-          "totalPRRowsWithPO": 307,
-          "avgPRRowsWithPOPerBusinessDay": 15.35,
+          "totalPRRowsWithPO": 293,
+          "avgPRRowsWithPOPerBusinessDay": 14.65,
           "avgCreateToPmDays": 1.07,
           "avgPmToBuyerDays": 0.11,
           "avgCreateToBuyerDays": 1.18,
@@ -263,7 +279,7 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-02-02",
-              "count": 7
+              "count": 8
             },
             {
               "date": "2026-02-03",
@@ -271,23 +287,19 @@
             },
             {
               "date": "2026-02-04",
-              "count": 18
+              "count": 14
             },
             {
               "date": "2026-02-05",
-              "count": 15
+              "count": 14
             },
             {
               "date": "2026-02-06",
-              "count": 25
-            },
-            {
-              "date": "2026-02-07",
-              "count": 1
+              "count": 29
             },
             {
               "date": "2026-02-09",
-              "count": 12
+              "count": 10
             },
             {
               "date": "2026-02-10",
@@ -295,63 +307,67 @@
             },
             {
               "date": "2026-02-11",
-              "count": 13
-            },
-            {
-              "date": "2026-02-12",
-              "count": 18
-            },
-            {
-              "date": "2026-02-13",
-              "count": 13
-            },
-            {
-              "date": "2026-02-16",
               "count": 9
             },
             {
+              "date": "2026-02-12",
+              "count": 20
+            },
+            {
+              "date": "2026-02-13",
+              "count": 7
+            },
+            {
+              "date": "2026-02-14",
+              "count": 1
+            },
+            {
+              "date": "2026-02-16",
+              "count": 12
+            },
+            {
               "date": "2026-02-17",
-              "count": 21
+              "count": 28
             },
             {
               "date": "2026-02-18",
-              "count": 21
+              "count": 20
             },
             {
               "date": "2026-02-19",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-02-20",
-              "count": 12
+              "count": 9
             },
             {
               "date": "2026-02-23",
-              "count": 17
+              "count": 10
             },
             {
               "date": "2026-02-24",
-              "count": 30
+              "count": 26
             },
             {
               "date": "2026-02-25",
-              "count": 14
+              "count": 17
             },
             {
               "date": "2026-02-26",
-              "count": 12
+              "count": 16
             },
             {
               "date": "2026-02-27",
-              "count": 17
+              "count": 16
             }
           ],
-          "totalPRRows": 307,
-          "avgPRRowsPerBusinessDay": 15.35,
+          "totalPRRows": 293,
+          "avgPRRowsPerBusinessDay": 14.65,
           "dailyPRRows": [
             {
               "date": "2026-02-02",
-              "count": 7
+              "count": 8
             },
             {
               "date": "2026-02-03",
@@ -359,23 +375,19 @@
             },
             {
               "date": "2026-02-04",
-              "count": 18
+              "count": 14
             },
             {
               "date": "2026-02-05",
-              "count": 15
+              "count": 14
             },
             {
               "date": "2026-02-06",
-              "count": 25
-            },
-            {
-              "date": "2026-02-07",
-              "count": 1
+              "count": 29
             },
             {
               "date": "2026-02-09",
-              "count": 12
+              "count": 10
             },
             {
               "date": "2026-02-10",
@@ -383,55 +395,59 @@
             },
             {
               "date": "2026-02-11",
-              "count": 13
-            },
-            {
-              "date": "2026-02-12",
-              "count": 18
-            },
-            {
-              "date": "2026-02-13",
-              "count": 13
-            },
-            {
-              "date": "2026-02-16",
               "count": 9
             },
             {
+              "date": "2026-02-12",
+              "count": 20
+            },
+            {
+              "date": "2026-02-13",
+              "count": 7
+            },
+            {
+              "date": "2026-02-14",
+              "count": 1
+            },
+            {
+              "date": "2026-02-16",
+              "count": 12
+            },
+            {
               "date": "2026-02-17",
-              "count": 21
+              "count": 28
             },
             {
               "date": "2026-02-18",
-              "count": 21
+              "count": 20
             },
             {
               "date": "2026-02-19",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-02-20",
-              "count": 12
+              "count": 9
             },
             {
               "date": "2026-02-23",
-              "count": 17
+              "count": 10
             },
             {
               "date": "2026-02-24",
-              "count": 30
+              "count": 26
             },
             {
               "date": "2026-02-25",
-              "count": 14
+              "count": 17
             },
             {
               "date": "2026-02-26",
-              "count": 12
+              "count": 16
             },
             {
               "date": "2026-02-27",
-              "count": 17
+              "count": 16
             }
           ]
         },
@@ -439,8 +455,8 @@
           "key": "2026-03",
           "month": "March",
           "released": 240,
-          "totalPRRowsWithPO": 334,
-          "avgPRRowsWithPOPerBusinessDay": 15.18,
+          "totalPRRowsWithPO": 326,
+          "avgPRRowsWithPOPerBusinessDay": 14.82,
           "avgCreateToPmDays": 1.27,
           "avgPmToBuyerDays": 0.06,
           "avgCreateToBuyerDays": 1.32,
@@ -454,176 +470,176 @@
           "amount": 15750888.63,
           "dailyPRRowsWithPO": [
             {
-              "date": "2026-03-01",
-              "count": 1
-            },
-            {
               "date": "2026-03-02",
-              "count": 20
-            },
-            {
-              "date": "2026-03-03",
-              "count": 26
-            },
-            {
-              "date": "2026-03-04",
-              "count": 12
-            },
-            {
-              "date": "2026-03-05",
-              "count": 14
-            },
-            {
-              "date": "2026-03-06",
-              "count": 22
-            },
-            {
-              "date": "2026-03-09",
-              "count": 23
-            },
-            {
-              "date": "2026-03-10",
-              "count": 35
-            },
-            {
-              "date": "2026-03-11",
-              "count": 6
-            },
-            {
-              "date": "2026-03-12",
-              "count": 7
-            },
-            {
-              "date": "2026-03-17",
-              "count": 19
-            },
-            {
-              "date": "2026-03-18",
               "count": 16
             },
             {
-              "date": "2026-03-19",
-              "count": 20
+              "date": "2026-03-03",
+              "count": 29
             },
             {
-              "date": "2026-03-20",
+              "date": "2026-03-04",
+              "count": 19
+            },
+            {
+              "date": "2026-03-05",
+              "count": 13
+            },
+            {
+              "date": "2026-03-06",
               "count": 17
             },
             {
-              "date": "2026-03-23",
-              "count": 14
+              "date": "2026-03-09",
+              "count": 19
             },
             {
-              "date": "2026-03-24",
-              "count": 21
+              "date": "2026-03-10",
+              "count": 40
             },
             {
-              "date": "2026-03-25",
-              "count": 11
+              "date": "2026-03-11",
+              "count": 8
             },
             {
-              "date": "2026-03-26",
+              "date": "2026-03-12",
               "count": 10
             },
             {
+              "date": "2026-03-17",
+              "count": 18
+            },
+            {
+              "date": "2026-03-18",
+              "count": 13
+            },
+            {
+              "date": "2026-03-19",
+              "count": 18
+            },
+            {
+              "date": "2026-03-20",
+              "count": 18
+            },
+            {
+              "date": "2026-03-23",
+              "count": 15
+            },
+            {
+              "date": "2026-03-24",
+              "count": 20
+            },
+            {
+              "date": "2026-03-25",
+              "count": 7
+            },
+            {
+              "date": "2026-03-26",
+              "count": 13
+            },
+            {
               "date": "2026-03-27",
-              "count": 9
+              "count": 12
+            },
+            {
+              "date": "2026-03-29",
+              "count": 1
             },
             {
               "date": "2026-03-30",
-              "count": 14
+              "count": 9
             },
             {
               "date": "2026-03-31",
-              "count": 17
+              "count": 11
             }
           ],
-          "totalPRRows": 334,
-          "avgPRRowsPerBusinessDay": 15.18,
+          "totalPRRows": 326,
+          "avgPRRowsPerBusinessDay": 14.82,
           "dailyPRRows": [
             {
-              "date": "2026-03-01",
-              "count": 1
-            },
-            {
               "date": "2026-03-02",
-              "count": 20
-            },
-            {
-              "date": "2026-03-03",
-              "count": 26
-            },
-            {
-              "date": "2026-03-04",
-              "count": 12
-            },
-            {
-              "date": "2026-03-05",
-              "count": 14
-            },
-            {
-              "date": "2026-03-06",
-              "count": 22
-            },
-            {
-              "date": "2026-03-09",
-              "count": 23
-            },
-            {
-              "date": "2026-03-10",
-              "count": 35
-            },
-            {
-              "date": "2026-03-11",
-              "count": 6
-            },
-            {
-              "date": "2026-03-12",
-              "count": 7
-            },
-            {
-              "date": "2026-03-17",
-              "count": 19
-            },
-            {
-              "date": "2026-03-18",
               "count": 16
             },
             {
-              "date": "2026-03-19",
-              "count": 20
+              "date": "2026-03-03",
+              "count": 29
             },
             {
-              "date": "2026-03-20",
+              "date": "2026-03-04",
+              "count": 19
+            },
+            {
+              "date": "2026-03-05",
+              "count": 13
+            },
+            {
+              "date": "2026-03-06",
               "count": 17
             },
             {
-              "date": "2026-03-23",
-              "count": 14
+              "date": "2026-03-09",
+              "count": 19
             },
             {
-              "date": "2026-03-24",
-              "count": 21
+              "date": "2026-03-10",
+              "count": 40
             },
             {
-              "date": "2026-03-25",
-              "count": 11
+              "date": "2026-03-11",
+              "count": 8
             },
             {
-              "date": "2026-03-26",
+              "date": "2026-03-12",
               "count": 10
             },
             {
+              "date": "2026-03-17",
+              "count": 18
+            },
+            {
+              "date": "2026-03-18",
+              "count": 13
+            },
+            {
+              "date": "2026-03-19",
+              "count": 18
+            },
+            {
+              "date": "2026-03-20",
+              "count": 18
+            },
+            {
+              "date": "2026-03-23",
+              "count": 15
+            },
+            {
+              "date": "2026-03-24",
+              "count": 20
+            },
+            {
+              "date": "2026-03-25",
+              "count": 7
+            },
+            {
+              "date": "2026-03-26",
+              "count": 13
+            },
+            {
               "date": "2026-03-27",
-              "count": 9
+              "count": 12
+            },
+            {
+              "date": "2026-03-29",
+              "count": 1
             },
             {
               "date": "2026-03-30",
-              "count": 14
+              "count": 9
             },
             {
               "date": "2026-03-31",
-              "count": 17
+              "count": 11
             }
           ]
         },
@@ -631,8 +647,8 @@
           "key": "2026-04",
           "month": "April",
           "released": 186,
-          "totalPRRowsWithPO": 278,
-          "avgPRRowsWithPOPerBusinessDay": 12.64,
+          "totalPRRowsWithPO": 281,
+          "avgPRRowsWithPOPerBusinessDay": 12.77,
           "avgCreateToPmDays": 1.67,
           "avgPmToBuyerDays": 0.11,
           "avgCreateToBuyerDays": 1.78,
@@ -647,23 +663,23 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-04-01",
-              "count": 7
+              "count": 9
             },
             {
               "date": "2026-04-02",
-              "count": 3
+              "count": 6
             },
             {
               "date": "2026-04-03",
-              "count": 16
+              "count": 11
             },
             {
               "date": "2026-04-06",
-              "count": 13
+              "count": 11
             },
             {
               "date": "2026-04-07",
-              "count": 12
+              "count": 15
             },
             {
               "date": "2026-04-08",
@@ -671,31 +687,35 @@
             },
             {
               "date": "2026-04-09",
-              "count": 15
+              "count": 17
             },
             {
               "date": "2026-04-10",
-              "count": 10
+              "count": 9
             },
             {
               "date": "2026-04-13",
-              "count": 11
+              "count": 9
             },
             {
               "date": "2026-04-14",
-              "count": 10
+              "count": 12
             },
             {
               "date": "2026-04-15",
-              "count": 13
+              "count": 14
             },
             {
               "date": "2026-04-16",
-              "count": 8
+              "count": 6
             },
             {
               "date": "2026-04-17",
-              "count": 16
+              "count": 17
+            },
+            {
+              "date": "2026-04-18",
+              "count": 1
             },
             {
               "date": "2026-04-20",
@@ -703,59 +723,59 @@
             },
             {
               "date": "2026-04-21",
-              "count": 16
+              "count": 14
             },
             {
               "date": "2026-04-22",
-              "count": 17
+              "count": 10
             },
             {
               "date": "2026-04-23",
-              "count": 10
+              "count": 17
             },
             {
               "date": "2026-04-24",
-              "count": 10
+              "count": 8
             },
             {
               "date": "2026-04-27",
-              "count": 18
+              "count": 16
             },
             {
               "date": "2026-04-28",
-              "count": 25
+              "count": 12
             },
             {
               "date": "2026-04-29",
-              "count": 11
+              "count": 24
             },
             {
               "date": "2026-04-30",
-              "count": 17
+              "count": 23
             }
           ],
-          "totalPRRows": 278,
-          "avgPRRowsPerBusinessDay": 12.64,
+          "totalPRRows": 281,
+          "avgPRRowsPerBusinessDay": 12.77,
           "dailyPRRows": [
             {
               "date": "2026-04-01",
-              "count": 7
+              "count": 9
             },
             {
               "date": "2026-04-02",
-              "count": 3
+              "count": 6
             },
             {
               "date": "2026-04-03",
-              "count": 16
+              "count": 11
             },
             {
               "date": "2026-04-06",
-              "count": 13
+              "count": 11
             },
             {
               "date": "2026-04-07",
-              "count": 12
+              "count": 15
             },
             {
               "date": "2026-04-08",
@@ -763,31 +783,35 @@
             },
             {
               "date": "2026-04-09",
-              "count": 15
+              "count": 17
             },
             {
               "date": "2026-04-10",
-              "count": 10
+              "count": 9
             },
             {
               "date": "2026-04-13",
-              "count": 11
+              "count": 9
             },
             {
               "date": "2026-04-14",
-              "count": 10
+              "count": 12
             },
             {
               "date": "2026-04-15",
-              "count": 13
+              "count": 14
             },
             {
               "date": "2026-04-16",
-              "count": 8
+              "count": 6
             },
             {
               "date": "2026-04-17",
-              "count": 16
+              "count": 17
+            },
+            {
+              "date": "2026-04-18",
+              "count": 1
             },
             {
               "date": "2026-04-20",
@@ -795,35 +819,35 @@
             },
             {
               "date": "2026-04-21",
-              "count": 16
+              "count": 14
             },
             {
               "date": "2026-04-22",
-              "count": 17
+              "count": 10
             },
             {
               "date": "2026-04-23",
-              "count": 10
+              "count": 17
             },
             {
               "date": "2026-04-24",
-              "count": 10
+              "count": 8
             },
             {
               "date": "2026-04-27",
-              "count": 18
+              "count": 16
             },
             {
               "date": "2026-04-28",
-              "count": 25
+              "count": 12
             },
             {
               "date": "2026-04-29",
-              "count": 11
+              "count": 24
             },
             {
               "date": "2026-04-30",
-              "count": 17
+              "count": 23
             }
           ]
         },
@@ -831,8 +855,8 @@
           "key": "2026-05",
           "month": "May",
           "released": 254,
-          "totalPRRowsWithPO": 388,
-          "avgPRRowsWithPOPerBusinessDay": 18.48,
+          "totalPRRowsWithPO": 373,
+          "avgPRRowsWithPOPerBusinessDay": 17.76,
           "avgCreateToPmDays": 1.14,
           "avgPmToBuyerDays": 0.07,
           "avgCreateToBuyerDays": 1.21,
@@ -847,175 +871,183 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-05-01",
-              "count": 13
+              "count": 10
             },
             {
               "date": "2026-05-04",
-              "count": 28
+              "count": 17
             },
             {
               "date": "2026-05-05",
-              "count": 15
+              "count": 23
             },
             {
               "date": "2026-05-06",
-              "count": 9
+              "count": 6
             },
             {
               "date": "2026-05-07",
-              "count": 29
+              "count": 17
             },
             {
               "date": "2026-05-08",
-              "count": 20
+              "count": 32
             },
             {
               "date": "2026-05-11",
-              "count": 11
+              "count": 7
             },
             {
               "date": "2026-05-12",
-              "count": 25
+              "count": 24
             },
             {
               "date": "2026-05-13",
-              "count": 12
+              "count": 16
             },
             {
               "date": "2026-05-14",
-              "count": 26
+              "count": 17
             },
             {
               "date": "2026-05-15",
               "count": 23
             },
             {
+              "date": "2026-05-17",
+              "count": 1
+            },
+            {
               "date": "2026-05-18",
-              "count": 16
+              "count": 15
             },
             {
               "date": "2026-05-19",
-              "count": 14
+              "count": 17
             },
             {
               "date": "2026-05-20",
-              "count": 20
+              "count": 23
             },
             {
               "date": "2026-05-21",
-              "count": 9
+              "count": 11
             },
             {
               "date": "2026-05-22",
-              "count": 12
+              "count": 10
             },
             {
               "date": "2026-05-26",
-              "count": 19
+              "count": 11
             },
             {
               "date": "2026-05-27",
-              "count": 6
+              "count": 12
             },
             {
               "date": "2026-05-28",
-              "count": 24
+              "count": 23
             },
             {
               "date": "2026-05-29",
-              "count": 56
+              "count": 50
             },
             {
               "date": "2026-05-30",
-              "count": 1
+              "count": 8
             }
           ],
-          "totalPRRows": 388,
-          "avgPRRowsPerBusinessDay": 18.48,
+          "totalPRRows": 373,
+          "avgPRRowsPerBusinessDay": 17.76,
           "dailyPRRows": [
             {
               "date": "2026-05-01",
-              "count": 13
+              "count": 10
             },
             {
               "date": "2026-05-04",
-              "count": 28
+              "count": 17
             },
             {
               "date": "2026-05-05",
-              "count": 15
+              "count": 23
             },
             {
               "date": "2026-05-06",
-              "count": 9
+              "count": 6
             },
             {
               "date": "2026-05-07",
-              "count": 29
+              "count": 17
             },
             {
               "date": "2026-05-08",
-              "count": 20
+              "count": 32
             },
             {
               "date": "2026-05-11",
-              "count": 11
+              "count": 7
             },
             {
               "date": "2026-05-12",
-              "count": 25
+              "count": 24
             },
             {
               "date": "2026-05-13",
-              "count": 12
+              "count": 16
             },
             {
               "date": "2026-05-14",
-              "count": 26
+              "count": 17
             },
             {
               "date": "2026-05-15",
               "count": 23
             },
             {
+              "date": "2026-05-17",
+              "count": 1
+            },
+            {
               "date": "2026-05-18",
-              "count": 16
+              "count": 15
             },
             {
               "date": "2026-05-19",
-              "count": 14
+              "count": 17
             },
             {
               "date": "2026-05-20",
-              "count": 20
+              "count": 23
             },
             {
               "date": "2026-05-21",
-              "count": 9
+              "count": 11
             },
             {
               "date": "2026-05-22",
-              "count": 12
+              "count": 10
             },
             {
               "date": "2026-05-26",
-              "count": 19
+              "count": 11
             },
             {
               "date": "2026-05-27",
-              "count": 6
+              "count": 12
             },
             {
               "date": "2026-05-28",
-              "count": 24
+              "count": 23
             },
             {
               "date": "2026-05-29",
-              "count": 56
+              "count": 50
             },
             {
               "date": "2026-05-30",
-              "count": 1
+              "count": 8
             }
           ]
         },
@@ -1023,8 +1055,8 @@
           "key": "2026-06",
           "month": "June",
           "released": 301,
-          "totalPRRowsWithPO": 397,
-          "avgPRRowsWithPOPerBusinessDay": 18.05,
+          "totalPRRowsWithPO": 393,
+          "avgPRRowsWithPOPerBusinessDay": 17.86,
           "avgCreateToPmDays": 1.54,
           "avgPmToBuyerDays": 0.08,
           "avgCreateToBuyerDays": 1.62,
@@ -1039,23 +1071,23 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-06-01",
-              "count": 14
+              "count": 16
             },
             {
               "date": "2026-06-02",
-              "count": 19
+              "count": 12
             },
             {
               "date": "2026-06-03",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-04",
-              "count": 46
+              "count": 39
             },
             {
               "date": "2026-06-05",
-              "count": 20
+              "count": 23
             },
             {
               "date": "2026-06-06",
@@ -1063,95 +1095,103 @@
             },
             {
               "date": "2026-06-08",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-09",
-              "count": 17
+              "count": 25
             },
             {
               "date": "2026-06-10",
-              "count": 14
+              "count": 13
             },
             {
               "date": "2026-06-11",
-              "count": 21
+              "count": 22
             },
             {
               "date": "2026-06-12",
-              "count": 16
+              "count": 9
+            },
+            {
+              "date": "2026-06-13",
+              "count": 1
+            },
+            {
+              "date": "2026-06-14",
+              "count": 1
             },
             {
               "date": "2026-06-15",
-              "count": 11
+              "count": 15
             },
             {
               "date": "2026-06-16",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-17",
-              "count": 21
+              "count": 17
             },
             {
               "date": "2026-06-18",
-              "count": 26
+              "count": 28
             },
             {
-              "date": "2026-06-19",
+              "date": "2026-06-21",
               "count": 1
             },
             {
               "date": "2026-06-22",
-              "count": 11
+              "count": 15
             },
             {
               "date": "2026-06-23",
-              "count": 6
+              "count": 4
             },
             {
               "date": "2026-06-24",
-              "count": 22
+              "count": 24
             },
             {
               "date": "2026-06-25",
-              "count": 17
+              "count": 20
             },
             {
               "date": "2026-06-26",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-06-29",
-              "count": 22
+              "count": 24
             },
             {
               "date": "2026-06-30",
-              "count": 16
+              "count": 21
             }
           ],
-          "totalPRRows": 397,
-          "avgPRRowsPerBusinessDay": 18.05,
+          "totalPRRows": 393,
+          "avgPRRowsPerBusinessDay": 17.86,
           "dailyPRRows": [
             {
               "date": "2026-06-01",
-              "count": 14
+              "count": 16
             },
             {
               "date": "2026-06-02",
-              "count": 19
+              "count": 12
             },
             {
               "date": "2026-06-03",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-04",
-              "count": 46
+              "count": 39
             },
             {
               "date": "2026-06-05",
-              "count": 20
+              "count": 23
             },
             {
               "date": "2026-06-06",
@@ -1159,71 +1199,79 @@
             },
             {
               "date": "2026-06-08",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-09",
-              "count": 17
+              "count": 25
             },
             {
               "date": "2026-06-10",
-              "count": 14
+              "count": 13
             },
             {
               "date": "2026-06-11",
-              "count": 21
+              "count": 22
             },
             {
               "date": "2026-06-12",
-              "count": 16
+              "count": 9
+            },
+            {
+              "date": "2026-06-13",
+              "count": 1
+            },
+            {
+              "date": "2026-06-14",
+              "count": 1
             },
             {
               "date": "2026-06-15",
-              "count": 11
+              "count": 15
             },
             {
               "date": "2026-06-16",
-              "count": 21
+              "count": 18
             },
             {
               "date": "2026-06-17",
-              "count": 21
+              "count": 17
             },
             {
               "date": "2026-06-18",
-              "count": 26
+              "count": 28
             },
             {
-              "date": "2026-06-19",
+              "date": "2026-06-21",
               "count": 1
             },
             {
               "date": "2026-06-22",
-              "count": 11
+              "count": 15
             },
             {
               "date": "2026-06-23",
-              "count": 6
+              "count": 4
             },
             {
               "date": "2026-06-24",
-              "count": 22
+              "count": 24
             },
             {
               "date": "2026-06-25",
-              "count": 17
+              "count": 20
             },
             {
               "date": "2026-06-26",
-              "count": 13
+              "count": 8
             },
             {
               "date": "2026-06-29",
-              "count": 22
+              "count": 24
             },
             {
               "date": "2026-06-30",
-              "count": 16
+              "count": 21
             }
           ]
         },
@@ -1231,8 +1279,8 @@
           "key": "2026-07",
           "month": "July",
           "released": 301,
-          "totalPRRowsWithPO": 386,
-          "avgPRRowsWithPOPerBusinessDay": 16.78,
+          "totalPRRowsWithPO": 366,
+          "avgPRRowsWithPOPerBusinessDay": 15.91,
           "avgCreateToPmDays": 1.45,
           "avgPmToBuyerDays": 0.18,
           "avgCreateToBuyerDays": 1.64,
@@ -1247,87 +1295,83 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-07-01",
-              "count": 27
+              "count": 18
             },
             {
               "date": "2026-07-02",
-              "count": 10
+              "count": 11
             },
             {
               "date": "2026-07-06",
-              "count": 24
+              "count": 18
             },
             {
               "date": "2026-07-07",
-              "count": 21
+              "count": 28
             },
             {
               "date": "2026-07-08",
-              "count": 12
-            },
-            {
-              "date": "2026-07-09",
-              "count": 22
-            },
-            {
-              "date": "2026-07-10",
-              "count": 17
-            },
-            {
-              "date": "2026-07-11",
-              "count": 2
-            },
-            {
-              "date": "2026-07-13",
-              "count": 10
-            },
-            {
-              "date": "2026-07-14",
-              "count": 17
-            },
-            {
-              "date": "2026-07-15",
-              "count": 22
-            },
-            {
-              "date": "2026-07-16",
-              "count": 31
-            },
-            {
-              "date": "2026-07-17",
-              "count": 6
-            },
-            {
-              "date": "2026-07-18",
-              "count": 1
-            },
-            {
-              "date": "2026-07-20",
-              "count": 10
-            },
-            {
-              "date": "2026-07-21",
-              "count": 13
-            },
-            {
-              "date": "2026-07-22",
-              "count": 27
-            },
-            {
-              "date": "2026-07-23",
-              "count": 7
-            },
-            {
-              "date": "2026-07-24",
               "count": 19
             },
             {
+              "date": "2026-07-09",
+              "count": 15
+            },
+            {
+              "date": "2026-07-10",
+              "count": 21
+            },
+            {
+              "date": "2026-07-13",
+              "count": 7
+            },
+            {
+              "date": "2026-07-14",
+              "count": 20
+            },
+            {
+              "date": "2026-07-15",
+              "count": 26
+            },
+            {
+              "date": "2026-07-16",
+              "count": 25
+            },
+            {
+              "date": "2026-07-17",
+              "count": 5
+            },
+            {
+              "date": "2026-07-18",
+              "count": 3
+            },
+            {
+              "date": "2026-07-20",
+              "count": 5
+            },
+            {
+              "date": "2026-07-21",
+              "count": 9
+            },
+            {
+              "date": "2026-07-22",
+              "count": 15
+            },
+            {
+              "date": "2026-07-23",
+              "count": 11
+            },
+            {
+              "date": "2026-07-24",
+              "count": 22
+            },
+            {
               "date": "2026-07-25",
-              "count": 1
+              "count": 3
             },
             {
               "date": "2026-07-27",
-              "count": 23
+              "count": 11
             },
             {
               "date": "2026-07-28",
@@ -1335,103 +1379,99 @@
             },
             {
               "date": "2026-07-29",
-              "count": 18
+              "count": 21
             },
             {
               "date": "2026-07-30",
-              "count": 18
+              "count": 24
             },
             {
               "date": "2026-07-31",
-              "count": 8
+              "count": 9
             }
           ],
-          "totalPRRows": 386,
-          "avgPRRowsPerBusinessDay": 16.78,
+          "totalPRRows": 366,
+          "avgPRRowsPerBusinessDay": 15.91,
           "dailyPRRows": [
             {
               "date": "2026-07-01",
-              "count": 27
+              "count": 18
             },
             {
               "date": "2026-07-02",
-              "count": 10
+              "count": 11
             },
             {
               "date": "2026-07-06",
-              "count": 24
+              "count": 18
             },
             {
               "date": "2026-07-07",
-              "count": 21
+              "count": 28
             },
             {
               "date": "2026-07-08",
-              "count": 12
-            },
-            {
-              "date": "2026-07-09",
-              "count": 22
-            },
-            {
-              "date": "2026-07-10",
-              "count": 17
-            },
-            {
-              "date": "2026-07-11",
-              "count": 2
-            },
-            {
-              "date": "2026-07-13",
-              "count": 10
-            },
-            {
-              "date": "2026-07-14",
-              "count": 17
-            },
-            {
-              "date": "2026-07-15",
-              "count": 22
-            },
-            {
-              "date": "2026-07-16",
-              "count": 31
-            },
-            {
-              "date": "2026-07-17",
-              "count": 6
-            },
-            {
-              "date": "2026-07-18",
-              "count": 1
-            },
-            {
-              "date": "2026-07-20",
-              "count": 10
-            },
-            {
-              "date": "2026-07-21",
-              "count": 13
-            },
-            {
-              "date": "2026-07-22",
-              "count": 27
-            },
-            {
-              "date": "2026-07-23",
-              "count": 7
-            },
-            {
-              "date": "2026-07-24",
               "count": 19
             },
             {
+              "date": "2026-07-09",
+              "count": 15
+            },
+            {
+              "date": "2026-07-10",
+              "count": 21
+            },
+            {
+              "date": "2026-07-13",
+              "count": 7
+            },
+            {
+              "date": "2026-07-14",
+              "count": 20
+            },
+            {
+              "date": "2026-07-15",
+              "count": 26
+            },
+            {
+              "date": "2026-07-16",
+              "count": 25
+            },
+            {
+              "date": "2026-07-17",
+              "count": 5
+            },
+            {
+              "date": "2026-07-18",
+              "count": 3
+            },
+            {
+              "date": "2026-07-20",
+              "count": 5
+            },
+            {
+              "date": "2026-07-21",
+              "count": 9
+            },
+            {
+              "date": "2026-07-22",
+              "count": 15
+            },
+            {
+              "date": "2026-07-23",
+              "count": 11
+            },
+            {
+              "date": "2026-07-24",
+              "count": 22
+            },
+            {
               "date": "2026-07-25",
-              "count": 1
+              "count": 3
             },
             {
               "date": "2026-07-27",
-              "count": 23
+              "count": 11
             },
             {
               "date": "2026-07-28",
@@ -1439,15 +1479,15 @@
             },
             {
               "date": "2026-07-29",
-              "count": 18
+              "count": 21
             },
             {
               "date": "2026-07-30",
-              "count": 18
+              "count": 24
             },
             {
               "date": "2026-07-31",
-              "count": 8
+              "count": 9
             }
           ]
         },
@@ -1456,13 +1496,13 @@
           "month": "August",
           "released": 54,
           "totalPRRowsWithPO": 72,
-          "avgPRRowsWithPOPerBusinessDay": 18.0,
+          "avgPRRowsWithPOPerBusinessDay": 14.4,
           "avgCreateToPmDays": 0.65,
           "avgPmToBuyerDays": 0.05,
           "avgCreateToBuyerDays": 0.7,
           "processTimingCount": 54,
           "avgPOsPerBusinessDay": 10.8,
-          "businessDays": 4,
+          "businessDays": 5,
           "same_day": 54,
           "delayed_1": 0,
           "delayed_10_20": 0,
@@ -1471,39 +1511,47 @@
           "dailyPRRowsWithPO": [
             {
               "date": "2026-08-03",
-              "count": 12
+              "count": 8
             },
             {
               "date": "2026-08-04",
-              "count": 25
+              "count": 17
             },
             {
               "date": "2026-08-05",
-              "count": 22
+              "count": 32
             },
             {
               "date": "2026-08-06",
-              "count": 13
+              "count": 14
+            },
+            {
+              "date": "2026-08-07",
+              "count": 1
             }
           ],
           "totalPRRows": 72,
-          "avgPRRowsPerBusinessDay": 18.0,
+          "avgPRRowsPerBusinessDay": 14.4,
           "dailyPRRows": [
             {
               "date": "2026-08-03",
-              "count": 12
+              "count": 8
             },
             {
               "date": "2026-08-04",
-              "count": 25
+              "count": 17
             },
             {
               "date": "2026-08-05",
-              "count": 22
+              "count": 32
             },
             {
               "date": "2026-08-06",
-              "count": 13
+              "count": 14
+            },
+            {
+              "date": "2026-08-07",
+              "count": 1
             }
           ]
         }
@@ -1652,7 +1700,7 @@
           "status": "Printed"
         }
       ],
-      "calculationNote": "Monthly PR Rows are calculated from all rows with a populated Requisition #, grouped by Requisition Create Date. PO release, delay, and amount metrics still use their original PO-specific logic."
+      "calculationNote": "Monthly PR Rows are calculated from rows where Requisition Status equals Approved and Requisition PM Approve Date is populated, grouped by Requisition PM Approve Date. PO release, delay, and amount metrics remain PO-based."
     },
     "Canada": {
       "fileName": "Requisition and Purchase Order Status - CA.xlsx",
@@ -5468,7 +5516,7 @@
     "Process timing metrics use calendar elapsed days for Printed POs with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date populated.",
     "exchangeRatesToUSD was populated with public monthly average rates and fixed-peg rates; use SEL Finance-approved rates if required for official reporting.",
     "Daily drilldown counts rows where PO # is populated. Daily grouping uses PO Date when populated, otherwise Requisition Create Date as fallback.",
-    "Requested update applied: Monthly PR Rows use total Requisition # row count, grouped by Requisition Create Date, instead of rows where PO # is populated. PO amount and release delay metrics remain PO-based."
+    "Requested update applied: Monthly PR Rows use rows where Requisition Status equals Approved and are grouped by Requisition PM Approve Date. PO amount and release delay metrics remain PO-based."
   ],
   "exchangeRatesToUSD": {
     "2026-01": {
