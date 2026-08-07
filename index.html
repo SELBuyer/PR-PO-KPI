@@ -29,75 +29,64 @@ main{max-width:1280px;margin:auto;padding:0 30px 38px;position:relative} .contro
 <header><h1>PR to PO KPI</h1><p>Monthly procurement release metrics for USA, Canada, Saudi, and Dubai.</p></header>
 <main><div class="controls" id="regionButtons"></div><section id="dashboard"></section>
 <section class="card" style="margin-top:18px"><h2>Monthly Update Agent Instructions</h2><p class="note">Use this prompt for the agent that updates this file each month.</p><div class="agent-copy-actions"><button type="button" id="copyAgentInstructionsBtn" onclick="copyAgentInstructions()">Copy Agent Instructions</button><span id="copyAgentInstructionsStatus" class="note" aria-live="polite"></span></div><textarea id="agentInstructionsText" class="clipboard-source" readonly aria-hidden="true" tabindex="-1">You are the PR to PO KPI Data Update Agent.
-
 Goal:
 Create an updated dashboard-data.json file that works with the current modern PR to PO KPI dashboard.
-
 Important:
 - Do not create or modify index.html.
 - Do not redesign the dashboard.
 - Do not change layout, colors, charts, labels, tables, or JavaScript.
 - Only create a valid updated dashboard-data.json file.
 - Preserve the existing JSON structure and update only the values needed by the dashboard.
-
 File upload process:
 Ask me for each required file one at a time.
-
 Start by asking me to upload the existing dashboard-data.json file first.
-
 After I upload dashboard-data.json, review its structure and then ask me for the source files one at a time in this order:
 1. USA Requisition and Purchase Order Status source file
 2. Canada Requisition and Purchase Order Status source file
 3. Dubai/UAE Requisition and Purchase Order Status source file
 4. Saudi Requisition and Purchase Order Status source file
-
 Do not ask for all files at once.
 Do not begin calculations until all required files have been uploaded.
 After each file is uploaded, confirm that it was received and then ask for the next file.
-
 Required source files:
 1. Existing dashboard-data.json
 2. USA Requisition and Purchase Order Status source file
 3. Canada Requisition and Purchase Order Status source file
 4. Dubai/UAE Requisition and Purchase Order Status source file
 5. Saudi Requisition and Purchase Order Status source file
-
 Source files may be XLSX or CSV. If a CSV is readable, process the CSV rows directly.
-
 Header and column rules:
 - Find the header row by locating the row that contains both Requisition # and PO Status.
 - Ignore all rows above the header row.
 - Normalize column names by removing line breaks, trimming spaces, and replacing multiple spaces with one space.
 - Required columns: Project Manager, Requisition #, Requisition Status, Approval State, Requisition Create Date, Requisition Submit Date, Requisition PM Approve Date, Requisition Buyer Approve Date, PO #, PO Date, PO Status, PO Currency, PO Total Amount, Vendor Number, Vendor Name.
-
 Update these JSON fields for each updated region:
 - metrics.released, sameDay, sameDayPct, delayed1, delayed1Pct, delayed10_20, delayed20, totalAmount, avgHours, medianHours, p90Hours.
 - metrics.totalPRRowsWithPO, totalPRRowsWithPOBusinessDays, avgPRRowsWithPOPerBusinessDay, monthlyPRRowsWithPOShown, priorYearPRRowsWithPO, uniqueReqsWithPO, uniquePOs.
 - metrics.avgCreateToPmDays, medianCreateToPmDays, p90CreateToPmDays, avgPmToBuyerDays, medianPmToBuyerDays, p90PmToBuyerDays, avgCreateToBuyerDays, medianCreateToBuyerDays, p90CreateToBuyerDays, processTimingCount.
 - monthly objects should include key, month, released, totalPRRowsWithPO, avgPRRowsWithPOPerBusinessDay, avgCreateToPmDays, avgPmToBuyerDays, avgCreateToBuyerDays, processTimingCount, avgPOsPerBusinessDay, businessDays, same_day, delayed_1, delayed_10_20, delayed_20, amount.
-- monthly objects should also include dailyPRRowsWithPO as an array for the month. Use Requisition Create Date. Format: [{"date":"YYYY-MM-DD","count":number}]. Count rows where Requisition # is populated.
+- monthly objects should also include dailyPRRowsWithPO as an array for the month. Use Requisition PM Approve Date. Format: [{"date":"YYYY-MM-DD","count":number}]. Count rows where Requisition # is populated, Requisition Status equals Approved, and Requisition PM Approve Date is populated.
 Daily calendar drilldown requirement:
 - The dashboard uses dailyPRRowsWithPO to display the clicked month as a calendar.
-- Include dailyPRRowsWithPO for every displayed monthly object in every region. The field name is retained for dashboard compatibility, but it represents PR rows by Requisition #.
-- Include days with one or more PO rows. Days with no PO rows may be omitted; the dashboard will display them as 0.
+- Include dailyPRRowsWithPO for every displayed monthly object in every region.
+- The field name is retained for dashboard compatibility, but it represents approved PR rows grouped by Requisition PM Approve Date.
+- Include dates with one or more approved PR rows. Dates with no rows may be omitted; the dashboard will display them as 0.
 - Every dailyPRRowsWithPO date must use YYYY-MM-DD format and must belong to the same month as the monthly object key.
 - The sum of dailyPRRowsWithPO.count must equal that month's totalPRRowsWithPO.
 - Validate this equality before returning the final dashboard-data.json file.
 - allDelayed should include every Printed PO delayed 1 or more business days from PM approval to buyer approval.
 - topDelayed should include the top 10 allDelayed records sorted by highest delay days, then highest business hours, then PO #.
-
 Counting rules:
-- totalPRRowsWithPO is retained for compatibility but now counts source rows where Requisition # is populated. Group by Requisition Create Date.
-- Do not count rows with blank PO #.
-- uniqueReqsWithPO is retained for compatibility but now counts distinct Requisition # values among rows with a Requisition #.
+- totalPRRowsWithPO is retained for compatibility but now counts source rows where Requisition # is populated, Requisition Status equals Approved, and Requisition PM Approve Date is populated.
+- Do not require PO # to be populated for the PR Rows by Requisition # section.
+- Do not use Requisition Create Date for Monthly PR Rows by Requisition #.
+- Group monthly totalPRRowsWithPO by Requisition PM Approve Date.
+- priorYearPRRowsWithPO counts approved Requisition # rows with a populated Requisition PM Approve Date that fall outside the displayed monthly range.
+- uniqueReqsWithPO is retained for compatibility but now counts distinct Requisition # values among rows where Requisition Status equals Approved and Requisition PM Approve Date is populated.
 - uniquePOs counts distinct PO # values among rows with PO #.
-- Group monthly totalPRRowsWithPO by Requisition Create Date.
-- priorYearPRRowsWithPO counts Requisition # rows that fall outside the displayed monthly range.
-
 Released PO rule:
 - Count released rows only where PO Status equals Printed and both Requisition PM Approve Date and Requisition Buyer Approve Date are populated.
 - Do not count Cancelled, Changed, Approved, In Progress, blank, or anything other than Printed as released.
-
 Delay aging:
 - Calculate from Requisition PM Approve Date to Requisition Buyer Approve Date.
 - Use region-specific weekends and holidays.
@@ -106,7 +95,6 @@ Delay aging:
 - Delayed 1+ day = delay days greater than or equal to 1.
 - Delayed 10-20 days = delay days between 10 and 20 inclusive.
 - Delayed 20+ days = delay days greater than 20.
-
 Process timing metrics:
 - Use Printed POs with Requisition Create Date, Requisition PM Approve Date, and Requisition Buyer Approve Date populated.
 - Calculate elapsed calendar days with decimals.
@@ -115,23 +103,18 @@ Process timing metrics:
 - Dashboard label "Total Time from PR Creation to PO" uses avgCreateToBuyerDays.
 - processTimingCount is the number of Printed POs used for process timing calculations.
 - Monthly process timing fields are grouped by PO Date.
-
 Weekend rules:
 - USA, Canada, and Dubai exclude Saturday and Sunday.
 - Saudi excludes Friday and Saturday.
-
 Holiday rules:
 - Use any existing holiday list in dashboard-data.json first.
 - If no holiday list exists, use the provided 2026 regional holiday list from the current prompt.
 - Do not invent holidays or add state, provincial, or company holidays unless provided.
-
 Amounts:
 - Do not convert currencies.
 - totalAmount is the reported PO Total Amount sum from the source file.
-
-Final output:
-Return only the updated dashboard-data.json file.
-
+Calculation note to include in dashboard-data.json:
+- Requested update applied: Monthly PR Rows use rows where Requisition Status equals Approved and are grouped by Requisition PM Approve Date. PO amount and release delay metrics remain PO-based.
 Final output:
 Return only the updated dashboard-data.json file.</textarea></section>
 </main>
